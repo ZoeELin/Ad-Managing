@@ -14,7 +14,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// Ad represents the structure of an advertisement
+// Ad represents the structure of an advertisementgit
 type Ad struct {
 	Title      string      `json:"title"`
 	StartAt    string      `json:"startAt"`
