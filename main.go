@@ -1,35 +1,22 @@
 package main
 
 import (
-	"encoding/json"
+	"flag"
 	"fmt"
-	"log"
-	"math/rand"
 	"net/http"
 	"os"
 	"sort"
 	"strconv"
-	"time"
+
+	"ad-proj/database"
+	"ad-proj/models"
+
+	"github.com/joho/godotenv"
+
+	_ "github.com/lib/pq"
 
 	"github.com/gin-gonic/gin"
 )
-
-// Ad represents the structure of an advertisementgit
-type Ad struct {
-	Title      string      `json:"title"`
-	StartAt    string      `json:"startAt"`
-	EndAt      string      `json:"endAt"`
-	Conditions []Condition `json:"conditions,omitempty"`
-}
-
-// Condition represents a condition for targeting advertisements
-type Condition struct {
-	AgeStart  int      `json:"ageStart,omitempty"`
-	AgeEnd    int      `json:"ageEnd,omitempty"`
-	Gender    string   `json:"gender,omitempty"`
-	Countries []string `json:"countries,omitempty"`
-	Platforms []string `json:"platforms,omitempty"`
-}
 
 type AdItem struct {
 	Title string `json:"title"`
@@ -45,12 +32,12 @@ type AdResponse struct {
 	AdItems string `json:"adItems"`
 }
 
-var ads []Ad
+var ads []models.Ad
 
 // HTTP POST request, input 2 parameters
 func createAd(c *gin.Context) {
 	// A variable to store new ad which is encoded
-	var newAd Ad
+	var newAd models.Ad
 
 	// Decode the newAd, return err if failed
 	if err := c.ShouldBindJSON(&newAd); err != nil {
@@ -101,7 +88,7 @@ func listAds(c *gin.Context) {
 	age, _ := strconv.Atoi(ageStr)
 
 	// This is a slice that is compared to specified age, gender, countries, platforms
-	var filteredAds []Ad
+	var filteredAds []models.Ad
 	for _, ad := range ads {
 		if filterAd(ad, age, gender, country, platform) {
 			filteredAds = append(filteredAds, ad)
@@ -139,8 +126,7 @@ func listAds(c *gin.Context) {
 	c.JSON(http.StatusOK, response)
 }
 
-func filterAd(ad Ad, age int, gender string, country string, platform string) bool {
-	// fmt.Printf("condition.Countries, countries", condition.Countries, country)
+func filterAd(ad models.Ad, age int, gender string, country string, platform string) bool {
 	for _, condition := range ad.Conditions {
 		if (age == 0 || age >= condition.AgeStart) &&
 			(age == 0 || age <= condition.AgeEnd) &&
@@ -163,83 +149,33 @@ func isInSlice(text string, sliceText []string) bool {
 	return false
 }
 
-// Generate a random time string in the format "2006-01-02T15:04:05.000Z"
-func generateRandomTime() string {
-	min := time.Date(2020, 1, 1, 0, 0, 0, 0, time.UTC).Unix()
-	max := time.Date(2025, 12, 31, 23, 59, 59, 0, time.UTC).Unix()
-	randomUnix := rand.Int63n(max-min) + min
-	randomTime := time.Unix(randomUnix, 0)
-	return randomTime.Format("2006-01-02T15:04:05.000Z")
-}
-
-// Generate a random gender string "M" or "F"
-func randomGender() string {
-	genders := []string{"M", "F"}
-	return genders[rand.Intn(len(genders))]
-}
-
-// Generate random countries
-func randomCountries() []string {
-	countries := []string{"TW", "JP", "US", "CA", "UK", "AU"}
-	numCountries := rand.Intn(len(countries))
-	rand.Shuffle(len(countries), func(i, j int) {
-		countries[i], countries[j] = countries[j], countries[i]
-	})
-	return countries[:numCountries]
-}
-
-// Generate random platforms
-func randomPlatforms() []string {
-	platforms := []string{"android", "ios", "web"}
-	numPlatforms := rand.Intn(len(platforms))
-	rand.Shuffle(len(platforms), func(i, j int) {
-		platforms[i], platforms[j] = platforms[j], platforms[i]
-	})
-	return platforms[:numPlatforms]
-}
-
 func main() {
-
-	// Seed the random number generator for consistent results
-	rand.Seed(time.Now().UnixNano())
-
-	for i := 0; i < 100; i++ {
-		ad := Ad{
-			Title:   fmt.Sprintf("AD %02d", i+1),
-			StartAt: generateRandomTime(),
-			EndAt:   generateRandomTime(),
-			Conditions: []Condition{
-				{
-					AgeStart:  rand.Intn(100) + 1,
-					AgeEnd:    rand.Intn(100) + 1,
-					Gender:    randomGender(),
-					Countries: randomCountries(),
-					Platforms: randomPlatforms(),
-				},
-			},
-		}
-		ads = append(ads, ad)
-	}
-
-	// Convert ads slice to JSON
-	adsJSON, err := json.MarshalIndent(ads, "", "  ")
+	err := godotenv.Load() //by default, it is .env so we don't have to write
 	if err != nil {
-		log.Fatal(err)
+		fmt.Println("Error is occurred  on .env file please check")
+	}
+	//we read our .env file
+	host := os.Getenv("HOST")
+	port, _ := strconv.Atoi(os.Getenv("PORT"))
+	user := "postgres"
+	dbname := "postgres"
+	pass := os.Getenv("PASSWORD")
+	dsn := fmt.Sprintf("host=%s port=%d user=%s dbname=%s password=%s sslmode=disable",
+		host, port, user, dbname, pass)
+
+	// controller to initiallize the database
+	initFlag := flag.Bool("init", false, "Initialize the database")
+	flag.Parse()
+
+	// if add -init, initiallize
+	if *initFlag {
+		database.DbInit(dsn)
+		fmt.Println("Initialization completed.")
+	} else {
+		fmt.Println("No initialization performed.")
 	}
 
-	// Write JSON data to a file
-	file, err := os.Create("ads_data.json")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer file.Close()
-
-	_, err = file.Write(adsJSON)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	fmt.Println("Ads data generated and saved to ads_data.json")
+	database.ConnectDatabase(dsn)
 
 	r := gin.Default()
 

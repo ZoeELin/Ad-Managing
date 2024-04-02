@@ -1,388 +1,12 @@
 [
   {
     "title": "AD 01",
-    "startAt": "2022-03-26T19:03:22.000Z",
-    "endAt": "2025-05-03T04:11:00.000Z",
-    "conditions": [
-      {
-        "ageStart": 62,
-        "ageEnd": 62,
-        "gender": "M",
-        "countries": [
-          "US"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 02",
-    "startAt": "2025-10-01T17:31:56.000Z",
-    "endAt": "2023-05-03T20:37:23.000Z",
-    "conditions": [
-      {
-        "ageStart": 93,
-        "ageEnd": 82,
-        "gender": "F",
-        "countries": [
-          "US"
-        ],
-        "platforms": [
-          "web"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 03",
-    "startAt": "2024-08-12T21:57:49.000Z",
-    "endAt": "2023-04-11T07:00:59.000Z",
-    "conditions": [
-      {
-        "ageStart": 20,
-        "ageEnd": 6,
-        "gender": "F",
-        "platforms": [
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 04",
-    "startAt": "2020-06-25T13:38:26.000Z",
-    "endAt": "2024-08-01T03:23:50.000Z",
-    "conditions": [
-      {
-        "ageStart": 17,
-        "ageEnd": 65,
-        "gender": "M",
-        "countries": [
-          "TW"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 05",
-    "startAt": "2024-06-02T00:21:18.000Z",
-    "endAt": "2021-05-26T00:10:56.000Z",
-    "conditions": [
-      {
-        "ageStart": 85,
-        "ageEnd": 14,
-        "gender": "F",
-        "countries": [
-          "AU",
-          "CA",
-          "UK"
-        ],
-        "platforms": [
-          "web",
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 06",
-    "startAt": "2023-09-22T14:24:51.000Z",
-    "endAt": "2021-08-31T01:36:12.000Z",
-    "conditions": [
-      {
-        "ageStart": 77,
-        "ageEnd": 89,
-        "gender": "M",
-        "countries": [
-          "US",
-          "AU",
-          "CA",
-          "TW",
-          "UK"
-        ],
-        "platforms": [
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 07",
-    "startAt": "2020-05-04T15:45:33.000Z",
-    "endAt": "2022-01-30T23:36:58.000Z",
-    "conditions": [
-      {
-        "ageStart": 90,
-        "ageEnd": 41,
-        "gender": "F",
-        "countries": [
-          "AU",
-          "JP"
-        ],
-        "platforms": [
-          "android",
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 08",
-    "startAt": "2024-03-20T05:16:05.000Z",
-    "endAt": "2020-05-19T22:59:11.000Z",
-    "conditions": [
-      {
-        "ageStart": 98,
-        "ageEnd": 65,
-        "gender": "F",
-        "countries": [
-          "UK"
-        ],
-        "platforms": [
-          "web"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 09",
-    "startAt": "2023-12-25T22:18:30.000Z",
-    "endAt": "2021-01-28T20:26:06.000Z",
-    "conditions": [
-      {
-        "ageStart": 68,
-        "ageEnd": 41,
-        "gender": "M",
-        "countries": [
-          "UK",
-          "TW",
-          "US",
-          "AU",
-          "CA"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 10",
-    "startAt": "2021-04-19T06:50:50.000Z",
-    "endAt": "2023-10-19T14:06:44.000Z",
-    "conditions": [
-      {
-        "ageStart": 29,
-        "ageEnd": 52,
-        "gender": "M"
-      }
-    ]
-  },
-  {
-    "title": "AD 11",
-    "startAt": "2024-03-24T06:05:42.000Z",
-    "endAt": "2025-01-06T08:05:14.000Z",
-    "conditions": [
-      {
-        "ageStart": 23,
-        "ageEnd": 63,
-        "gender": "M"
-      }
-    ]
-  },
-  {
-    "title": "AD 12",
-    "startAt": "2021-11-26T19:10:56.000Z",
-    "endAt": "2020-07-19T10:10:47.000Z",
-    "conditions": [
-      {
-        "ageStart": 82,
-        "ageEnd": 36,
-        "gender": "M"
-      }
-    ]
-  },
-  {
-    "title": "AD 13",
-    "startAt": "2021-01-27T00:39:21.000Z",
-    "endAt": "2023-02-06T07:19:42.000Z",
-    "conditions": [
-      {
-        "ageStart": 97,
-        "ageEnd": 63,
-        "gender": "M",
-        "countries": [
-          "JP",
-          "CA",
-          "AU"
-        ],
-        "platforms": [
-          "web",
-          "android"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 14",
-    "startAt": "2021-01-02T22:00:56.000Z",
-    "endAt": "2020-06-18T19:57:29.000Z",
-    "conditions": [
-      {
-        "ageStart": 76,
-        "ageEnd": 56,
-        "gender": "F",
-        "countries": [
-          "AU"
-        ],
-        "platforms": [
-          "android",
-          "web"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 15",
-    "startAt": "2024-01-16T08:21:10.000Z",
-    "endAt": "2022-07-29T17:57:14.000Z",
-    "conditions": [
-      {
-        "ageStart": 91,
-        "ageEnd": 68,
-        "gender": "M",
-        "countries": [
-          "CA",
-          "US",
-          "AU",
-          "TW"
-        ],
-        "platforms": [
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 16",
-    "startAt": "2024-10-15T18:45:15.000Z",
-    "endAt": "2021-03-14T21:45:38.000Z",
-    "conditions": [
-      {
-        "ageStart": 77,
-        "ageEnd": 17,
-        "gender": "M",
-        "countries": [
-          "CA",
-          "UK",
-          "AU"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 17",
-    "startAt": "2024-09-02T19:37:45.000Z",
-    "endAt": "2025-08-24T16:24:27.000Z",
-    "conditions": [
-      {
-        "ageStart": 15,
-        "ageEnd": 43,
-        "gender": "M",
-        "countries": [
-          "CA",
-          "AU",
-          "JP",
-          "UK"
-        ],
-        "platforms": [
-          "android"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 18",
-    "startAt": "2023-08-08T12:22:09.000Z",
-    "endAt": "2021-07-17T09:03:23.000Z",
-    "conditions": [
-      {
-        "ageStart": 11,
-        "ageEnd": 21,
-        "gender": "M",
-        "countries": [
-          "TW",
-          "CA",
-          "JP",
-          "UK",
-          "US"
-        ],
-        "platforms": [
-          "web",
-          "android"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 19",
-    "startAt": "2024-12-28T10:12:27.000Z",
-    "endAt": "2024-06-18T10:26:22.000Z",
-    "conditions": [
-      {
-        "ageStart": 23,
-        "ageEnd": 52,
-        "gender": "F",
-        "countries": [
-          "JP",
-          "US",
-          "AU"
-        ],
-        "platforms": [
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 20",
-    "startAt": "2021-03-21T11:46:23.000Z",
-    "endAt": "2024-07-05T19:33:01.000Z",
-    "conditions": [
-      {
-        "ageStart": 12,
-        "ageEnd": 93,
-        "gender": "F",
-        "countries": [
-          "JP",
-          "UK",
-          "TW"
-        ],
-        "platforms": [
-          "web"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 21",
-    "startAt": "2025-02-12T00:29:54.000Z",
-    "endAt": "2022-01-01T18:49:51.000Z",
-    "conditions": [
-      {
-        "ageStart": 83,
-        "ageEnd": 8,
-        "gender": "F",
-        "countries": [
-          "CA"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 22",
-    "startAt": "2021-11-24T03:36:18.000Z",
-    "endAt": "2025-03-01T22:15:32.000Z",
+    "startAt": "2021-06-23T01:16:13.000Z",
+    "endAt": "2020-01-18T22:23:09.000Z",
     "conditions": [
       {
         "ageStart": 75,
-        "ageEnd": 7,
+        "ageEnd": 45,
         "gender": "F",
         "countries": [
           "JP"
@@ -395,69 +19,482 @@
     ]
   },
   {
-    "title": "AD 23",
-    "startAt": "2025-06-27T18:47:23.000Z",
-    "endAt": "2024-10-05T13:16:38.000Z",
+    "title": "AD 02",
+    "startAt": "2020-08-08T16:49:27.000Z",
+    "endAt": "2024-06-14T15:29:34.000Z",
     "conditions": [
       {
-        "ageStart": 37,
-        "ageEnd": 87,
+        "ageStart": 92,
+        "ageEnd": 34,
         "gender": "M",
         "countries": [
-          "TW",
-          "CA",
-          "AU",
-          "US",
-          "JP"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 24",
-    "startAt": "2025-09-12T09:53:39.000Z",
-    "endAt": "2024-04-10T21:46:03.000Z",
-    "conditions": [
-      {
-        "ageStart": 63,
-        "ageEnd": 60,
-        "gender": "M",
-        "countries": [
+          "UK",
           "US"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 03",
+    "startAt": "2025-09-22T04:14:34.000Z",
+    "endAt": "2023-04-19T13:11:48.000Z",
+    "conditions": [
+      {
+        "ageStart": 53,
+        "ageEnd": 23,
+        "gender": "M",
+        "countries": [
+          "UK",
+          "JP",
+          "AU"
+        ],
+        "platforms": [
+          "ios",
+          "web"
         ]
       }
     ]
   },
   {
-    "title": "AD 25",
-    "startAt": "2024-07-28T08:40:27.000Z",
-    "endAt": "2021-08-03T11:26:18.000Z",
+    "title": "AD 04",
+    "startAt": "2025-05-04T07:00:44.000Z",
+    "endAt": "2021-12-16T23:35:18.000Z",
     "conditions": [
       {
-        "ageStart": 3,
-        "ageEnd": 59,
+        "ageStart": 14,
+        "ageEnd": 73,
         "gender": "M",
+        "countries": [
+          "CA",
+          "US"
+        ],
         "platforms": [
-          "android",
+          "web",
           "ios"
         ]
       }
     ]
   },
   {
-    "title": "AD 26",
-    "startAt": "2020-11-19T06:50:57.000Z",
-    "endAt": "2025-10-10T16:02:30.000Z",
+    "title": "AD 05",
+    "startAt": "2024-05-07T22:21:38.000Z",
+    "endAt": "2025-03-23T23:16:04.000Z",
     "conditions": [
       {
-        "ageStart": 49,
-        "ageEnd": 47,
+        "ageStart": 84,
+        "ageEnd": 34,
+        "gender": "F",
+        "countries": [
+          "TW",
+          "US",
+          "AU",
+          "UK"
+        ],
+        "platforms": [
+          "android",
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 06",
+    "startAt": "2023-04-20T05:23:17.000Z",
+    "endAt": "2022-10-01T14:15:36.000Z",
+    "conditions": [
+      {
+        "ageStart": 44,
+        "ageEnd": 77,
+        "gender": "M",
+        "countries": [],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 07",
+    "startAt": "2021-12-17T02:34:59.000Z",
+    "endAt": "2022-10-25T00:28:07.000Z",
+    "conditions": [
+      {
+        "ageStart": 17,
+        "ageEnd": 100,
+        "gender": "M",
+        "countries": [],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 08",
+    "startAt": "2025-09-19T14:02:37.000Z",
+    "endAt": "2021-05-11T06:24:20.000Z",
+    "conditions": [
+      {
+        "ageStart": 33,
+        "ageEnd": 41,
+        "gender": "M",
+        "countries": [
+          "CA",
+          "UK",
+          "TW"
+        ],
+        "platforms": [
+          "web",
+          "android"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 09",
+    "startAt": "2021-01-05T07:29:04.000Z",
+    "endAt": "2020-06-20T21:22:43.000Z",
+    "conditions": [
+      {
+        "ageStart": 69,
+        "ageEnd": 8,
+        "gender": "F",
+        "countries": [
+          "UK",
+          "TW"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 10",
+    "startAt": "2020-01-07T11:41:58.000Z",
+    "endAt": "2024-09-07T06:18:46.000Z",
+    "conditions": [
+      {
+        "ageStart": 11,
+        "ageEnd": 22,
         "gender": "M",
         "countries": [
           "US",
+          "TW",
           "CA",
+          "UK"
+        ],
+        "platforms": [
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 11",
+    "startAt": "2023-11-13T01:01:03.000Z",
+    "endAt": "2025-06-16T09:28:52.000Z",
+    "conditions": [
+      {
+        "ageStart": 79,
+        "ageEnd": 21,
+        "gender": "F",
+        "countries": [],
+        "platforms": [
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 12",
+    "startAt": "2024-02-27T10:05:42.000Z",
+    "endAt": "2022-05-12T11:28:43.000Z",
+    "conditions": [
+      {
+        "ageStart": 19,
+        "ageEnd": 6,
+        "gender": "M",
+        "countries": [
+          "JP",
+          "CA",
+          "US",
+          "UK",
+          "TW"
+        ],
+        "platforms": [
+          "android",
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 13",
+    "startAt": "2020-07-20T05:30:42.000Z",
+    "endAt": "2023-04-29T21:22:55.000Z",
+    "conditions": [
+      {
+        "ageStart": 60,
+        "ageEnd": 32,
+        "gender": "M",
+        "countries": [
+          "UK",
+          "US",
+          "TW",
+          "AU",
+          "JP"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 14",
+    "startAt": "2024-08-09T15:06:45.000Z",
+    "endAt": "2025-07-23T23:50:48.000Z",
+    "conditions": [
+      {
+        "ageStart": 44,
+        "ageEnd": 11,
+        "gender": "F",
+        "countries": [
+          "UK"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 15",
+    "startAt": "2021-11-27T04:13:57.000Z",
+    "endAt": "2020-01-05T04:56:39.000Z",
+    "conditions": [
+      {
+        "ageStart": 13,
+        "ageEnd": 45,
+        "gender": "M",
+        "countries": [],
+        "platforms": [
+          "android"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 16",
+    "startAt": "2021-11-19T15:36:47.000Z",
+    "endAt": "2024-04-07T11:09:13.000Z",
+    "conditions": [
+      {
+        "ageStart": 44,
+        "ageEnd": 78,
+        "gender": "F",
+        "countries": [
+          "UK"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 17",
+    "startAt": "2023-09-04T19:57:00.000Z",
+    "endAt": "2024-04-17T00:35:36.000Z",
+    "conditions": [
+      {
+        "ageStart": 61,
+        "ageEnd": 59,
+        "gender": "M",
+        "countries": [
+          "JP",
+          "US",
+          "UK",
+          "CA"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 18",
+    "startAt": "2024-12-10T02:45:39.000Z",
+    "endAt": "2023-01-17T09:08:19.000Z",
+    "conditions": [
+      {
+        "ageStart": 94,
+        "ageEnd": 37,
+        "gender": "F",
+        "countries": [
+          "CA",
+          "JP",
+          "UK",
+          "AU",
+          "US"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 19",
+    "startAt": "2021-08-14T21:00:09.000Z",
+    "endAt": "2025-01-29T14:35:52.000Z",
+    "conditions": [
+      {
+        "ageStart": 100,
+        "ageEnd": 42,
+        "gender": "F",
+        "countries": [
+          "TW",
+          "JP",
+          "AU",
+          "US"
+        ],
+        "platforms": [
+          "ios",
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 20",
+    "startAt": "2025-10-01T03:12:54.000Z",
+    "endAt": "2022-08-05T19:20:17.000Z",
+    "conditions": [
+      {
+        "ageStart": 55,
+        "ageEnd": 97,
+        "gender": "M",
+        "countries": [
+          "US",
+          "UK",
+          "CA",
+          "JP"
+        ],
+        "platforms": [
+          "web",
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 21",
+    "startAt": "2024-06-14T01:19:05.000Z",
+    "endAt": "2020-04-14T19:43:21.000Z",
+    "conditions": [
+      {
+        "ageStart": 45,
+        "ageEnd": 95,
+        "gender": "M",
+        "countries": [
+          "JP",
           "TW",
           "UK",
+          "US"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 22",
+    "startAt": "2025-08-14T01:20:51.000Z",
+    "endAt": "2024-10-12T17:11:01.000Z",
+    "conditions": [
+      {
+        "ageStart": 7,
+        "ageEnd": 50,
+        "gender": "F",
+        "countries": [
+          "CA",
+          "US"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 23",
+    "startAt": "2024-12-24T10:24:11.000Z",
+    "endAt": "2023-03-21T15:16:40.000Z",
+    "conditions": [
+      {
+        "ageStart": 26,
+        "ageEnd": 56,
+        "gender": "M",
+        "countries": [
+          "UK",
+          "US",
+          "AU"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 24",
+    "startAt": "2020-03-08T19:33:28.000Z",
+    "endAt": "2020-05-22T01:17:01.000Z",
+    "conditions": [
+      {
+        "ageStart": 38,
+        "ageEnd": 74,
+        "gender": "M",
+        "countries": [
+          "TW",
+          "AU",
+          "US"
+        ],
+        "platforms": [
+          "android",
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 25",
+    "startAt": "2020-09-21T00:16:00.000Z",
+    "endAt": "2023-08-30T09:51:26.000Z",
+    "conditions": [
+      {
+        "ageStart": 80,
+        "ageEnd": 6,
+        "gender": "M",
+        "countries": [
+          "CA",
+          "AU",
+          "UK",
+          "JP",
+          "TW"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 26",
+    "startAt": "2022-07-19T01:05:37.000Z",
+    "endAt": "2023-03-19T21:33:53.000Z",
+    "conditions": [
+      {
+        "ageStart": 73,
+        "ageEnd": 84,
+        "gender": "M",
+        "countries": [
+          "CA",
+          "JP",
+          "TW",
           "AU"
         ],
         "platforms": [
@@ -468,39 +505,87 @@
   },
   {
     "title": "AD 27",
-    "startAt": "2020-07-02T10:09:43.000Z",
-    "endAt": "2021-09-13T13:08:21.000Z",
+    "startAt": "2025-09-01T05:35:42.000Z",
+    "endAt": "2025-12-18T15:38:20.000Z",
     "conditions": [
       {
-        "ageStart": 63,
-        "ageEnd": 12,
-        "gender": "F",
+        "ageStart": 7,
+        "ageEnd": 68,
+        "gender": "M",
         "countries": [
-          "UK",
           "JP",
+          "UK",
+          "AU",
           "US",
           "CA"
         ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 28",
+    "startAt": "2023-02-10T19:30:26.000Z",
+    "endAt": "2024-02-01T07:05:15.000Z",
+    "conditions": [
+      {
+        "ageStart": 81,
+        "ageEnd": 50,
+        "gender": "M",
+        "countries": [],
         "platforms": [
+          "android",
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 29",
+    "startAt": "2022-03-06T13:17:39.000Z",
+    "endAt": "2020-05-14T20:47:16.000Z",
+    "conditions": [
+      {
+        "ageStart": 92,
+        "ageEnd": 94,
+        "gender": "M",
+        "countries": [],
+        "platforms": [
+          "ios",
           "web"
         ]
       }
     ]
   },
   {
-    "title": "AD 28",
-    "startAt": "2025-12-08T02:15:15.000Z",
-    "endAt": "2023-02-14T21:40:07.000Z",
+    "title": "AD 30",
+    "startAt": "2024-12-14T16:45:59.000Z",
+    "endAt": "2025-10-09T21:34:57.000Z",
     "conditions": [
       {
-        "ageStart": 64,
-        "ageEnd": 53,
+        "ageStart": 73,
+        "ageEnd": 28,
         "gender": "F",
         "countries": [
+          "TW",
           "AU",
-          "US",
-          "JP",
           "CA"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 31",
+    "startAt": "2020-03-30T16:18:46.000Z",
+    "endAt": "2025-12-01T03:05:05.000Z",
+    "conditions": [
+      {
+        "ageStart": 68,
+        "ageEnd": 15,
+        "gender": "F",
+        "countries": [
+          "JP"
         ],
         "platforms": [
           "ios",
@@ -510,29 +595,106 @@
     ]
   },
   {
-    "title": "AD 29",
-    "startAt": "2025-09-10T00:54:27.000Z",
-    "endAt": "2020-02-27T11:36:55.000Z",
+    "title": "AD 32",
+    "startAt": "2024-10-27T12:54:37.000Z",
+    "endAt": "2022-11-22T08:11:41.000Z",
     "conditions": [
       {
-        "ageStart": 24,
-        "ageEnd": 5,
+        "ageStart": 87,
+        "ageEnd": 96,
         "gender": "M",
+        "countries": [
+          "AU",
+          "US",
+          "TW",
+          "UK",
+          "CA"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 33",
+    "startAt": "2021-04-14T19:05:44.000Z",
+    "endAt": "2021-05-22T05:11:35.000Z",
+    "conditions": [
+      {
+        "ageStart": 11,
+        "ageEnd": 20,
+        "gender": "F",
+        "countries": [
+          "AU"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 34",
+    "startAt": "2022-06-29T08:57:55.000Z",
+    "endAt": "2020-04-19T19:45:53.000Z",
+    "conditions": [
+      {
+        "ageStart": 45,
+        "ageEnd": 68,
+        "gender": "M",
+        "countries": [
+          "JP",
+          "US",
+          "CA",
+          "AU"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 35",
+    "startAt": "2020-04-23T14:30:03.000Z",
+    "endAt": "2021-12-25T07:26:34.000Z",
+    "conditions": [
+      {
+        "ageStart": 35,
+        "ageEnd": 43,
+        "gender": "F",
+        "countries": [],
         "platforms": [
+          "web",
           "ios"
         ]
       }
     ]
   },
   {
-    "title": "AD 30",
-    "startAt": "2021-11-08T09:41:09.000Z",
-    "endAt": "2023-06-17T11:36:49.000Z",
+    "title": "AD 36",
+    "startAt": "2024-06-05T21:47:51.000Z",
+    "endAt": "2023-04-08T13:41:06.000Z",
     "conditions": [
       {
-        "ageStart": 83,
-        "ageEnd": 97,
+        "ageStart": 4,
+        "ageEnd": 77,
+        "gender": "F",
+        "countries": [
+          "TW"
+        ],
+        "platforms": [
+          "android",
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 37",
+    "startAt": "2025-01-21T10:15:11.000Z",
+    "endAt": "2022-12-25T10:01:21.000Z",
+    "conditions": [
+      {
+        "ageStart": 32,
+        "ageEnd": 3,
         "gender": "M",
+        "countries": [],
         "platforms": [
           "web"
         ]
@@ -540,18 +702,125 @@
     ]
   },
   {
-    "title": "AD 31",
-    "startAt": "2025-10-30T01:01:42.000Z",
-    "endAt": "2020-02-16T03:28:28.000Z",
+    "title": "AD 38",
+    "startAt": "2023-01-18T10:47:17.000Z",
+    "endAt": "2023-11-27T01:00:02.000Z",
     "conditions": [
       {
-        "ageStart": 6,
-        "ageEnd": 48,
-        "gender": "F",
+        "ageStart": 40,
+        "ageEnd": 3,
+        "gender": "M",
+        "countries": [
+          "JP",
+          "TW",
+          "US"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 39",
+    "startAt": "2025-05-18T15:53:41.000Z",
+    "endAt": "2023-04-13T04:38:29.000Z",
+    "conditions": [
+      {
+        "ageStart": 40,
+        "ageEnd": 32,
+        "gender": "M",
+        "countries": [
+          "CA"
+        ],
+        "platforms": [
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 40",
+    "startAt": "2021-05-25T14:30:47.000Z",
+    "endAt": "2021-03-10T08:04:20.000Z",
+    "conditions": [
+      {
+        "ageStart": 4,
+        "ageEnd": 35,
+        "gender": "M",
         "countries": [
           "CA",
+          "JP",
+          "TW"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 41",
+    "startAt": "2025-09-01T15:53:34.000Z",
+    "endAt": "2025-10-01T05:53:10.000Z",
+    "conditions": [
+      {
+        "ageStart": 57,
+        "ageEnd": 76,
+        "gender": "F",
+        "countries": [
+          "UK"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 42",
+    "startAt": "2024-02-28T11:10:19.000Z",
+    "endAt": "2020-03-24T02:32:47.000Z",
+    "conditions": [
+      {
+        "ageStart": 75,
+        "ageEnd": 37,
+        "gender": "M",
+        "countries": [],
+        "platforms": [
+          "android",
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 43",
+    "startAt": "2023-04-07T22:20:59.000Z",
+    "endAt": "2021-04-12T06:44:46.000Z",
+    "conditions": [
+      {
+        "ageStart": 76,
+        "ageEnd": 41,
+        "gender": "F",
+        "countries": [
+          "TW",
           "UK",
-          "AU"
+          "US",
+          "JP"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 44",
+    "startAt": "2021-07-16T10:16:44.000Z",
+    "endAt": "2021-07-05T22:45:57.000Z",
+    "conditions": [
+      {
+        "ageStart": 70,
+        "ageEnd": 2,
+        "gender": "F",
+        "countries": [
+          "US",
+          "UK"
         ],
         "platforms": [
           "web",
@@ -561,251 +830,36 @@
     ]
   },
   {
-    "title": "AD 32",
-    "startAt": "2024-10-24T10:56:05.000Z",
-    "endAt": "2021-08-31T22:36:03.000Z",
-    "conditions": [
-      {
-        "ageStart": 26,
-        "ageEnd": 20,
-        "gender": "F",
-        "countries": [
-          "US",
-          "UK",
-          "TW",
-          "CA"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 33",
-    "startAt": "2021-03-29T12:07:23.000Z",
-    "endAt": "2023-07-31T05:34:29.000Z",
-    "conditions": [
-      {
-        "ageStart": 47,
-        "ageEnd": 32,
-        "gender": "M",
-        "countries": [
-          "US",
-          "TW",
-          "UK"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 34",
-    "startAt": "2021-07-24T15:01:14.000Z",
-    "endAt": "2022-03-24T02:35:59.000Z",
-    "conditions": [
-      {
-        "ageStart": 5,
-        "ageEnd": 2,
-        "gender": "M"
-      }
-    ]
-  },
-  {
-    "title": "AD 35",
-    "startAt": "2024-09-13T06:31:40.000Z",
-    "endAt": "2025-02-25T20:13:08.000Z",
-    "conditions": [
-      {
-        "ageStart": 100,
-        "ageEnd": 23,
-        "gender": "F",
-        "countries": [
-          "US",
-          "UK",
-          "CA",
-          "JP"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 36",
-    "startAt": "2025-12-22T12:41:51.000Z",
-    "endAt": "2022-09-14T10:56:03.000Z",
-    "conditions": [
-      {
-        "ageStart": 7,
-        "ageEnd": 94,
-        "gender": "M",
-        "countries": [
-          "AU",
-          "CA",
-          "JP",
-          "US"
-        ],
-        "platforms": [
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 37",
-    "startAt": "2021-06-29T15:56:37.000Z",
-    "endAt": "2023-06-26T15:36:05.000Z",
-    "conditions": [
-      {
-        "ageStart": 47,
-        "ageEnd": 73,
-        "gender": "M",
-        "countries": [
-          "CA"
-        ],
-        "platforms": [
-          "ios",
-          "web"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 38",
-    "startAt": "2022-08-29T04:47:55.000Z",
-    "endAt": "2021-10-07T13:06:24.000Z",
-    "conditions": [
-      {
-        "ageStart": 97,
-        "ageEnd": 6,
-        "gender": "F"
-      }
-    ]
-  },
-  {
-    "title": "AD 39",
-    "startAt": "2021-12-13T21:08:19.000Z",
-    "endAt": "2023-01-03T00:44:59.000Z",
-    "conditions": [
-      {
-        "ageStart": 63,
-        "ageEnd": 78,
-        "gender": "F",
-        "countries": [
-          "CA"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 40",
-    "startAt": "2025-11-07T16:12:35.000Z",
-    "endAt": "2025-08-19T00:15:19.000Z",
-    "conditions": [
-      {
-        "ageStart": 76,
-        "ageEnd": 70,
-        "gender": "F",
-        "countries": [
-          "JP",
-          "AU",
-          "US"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 41",
-    "startAt": "2020-01-17T15:23:57.000Z",
-    "endAt": "2024-11-27T13:37:53.000Z",
-    "conditions": [
-      {
-        "ageStart": 9,
-        "ageEnd": 64,
-        "gender": "M",
-        "countries": [
-          "US",
-          "AU",
-          "UK"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 42",
-    "startAt": "2020-08-08T06:42:56.000Z",
-    "endAt": "2024-08-15T02:31:38.000Z",
-    "conditions": [
-      {
-        "ageStart": 96,
-        "ageEnd": 76,
-        "gender": "F",
-        "platforms": [
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 43",
-    "startAt": "2022-07-10T09:13:09.000Z",
-    "endAt": "2022-01-17T05:49:06.000Z",
-    "conditions": [
-      {
-        "ageStart": 55,
-        "ageEnd": 47,
-        "gender": "M",
-        "countries": [
-          "TW"
-        ],
-        "platforms": [
-          "android"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 44",
-    "startAt": "2025-11-14T09:46:24.000Z",
-    "endAt": "2025-07-18T12:31:06.000Z",
-    "conditions": [
-      {
-        "ageStart": 6,
-        "ageEnd": 79,
-        "gender": "M",
-        "countries": [
-          "JP",
-          "US"
-        ]
-      }
-    ]
-  },
-  {
     "title": "AD 45",
-    "startAt": "2021-06-04T12:58:48.000Z",
-    "endAt": "2021-02-26T11:35:04.000Z",
+    "startAt": "2024-12-03T23:30:27.000Z",
+    "endAt": "2023-08-08T11:57:48.000Z",
     "conditions": [
       {
-        "ageStart": 6,
-        "ageEnd": 64,
-        "gender": "F",
+        "ageStart": 51,
+        "ageEnd": 24,
+        "gender": "M",
         "countries": [
-          "CA",
-          "TW",
-          "US",
-          "AU",
-          "UK"
-        ]
+          "US"
+        ],
+        "platforms": []
       }
     ]
   },
   {
     "title": "AD 46",
-    "startAt": "2020-06-28T05:08:09.000Z",
-    "endAt": "2021-11-26T15:15:31.000Z",
+    "startAt": "2025-02-14T21:57:10.000Z",
+    "endAt": "2022-03-05T21:37:22.000Z",
     "conditions": [
       {
-        "ageStart": 62,
-        "ageEnd": 94,
+        "ageStart": 95,
+        "ageEnd": 50,
         "gender": "M",
         "countries": [
+          "TW",
+          "JP",
+          "US",
           "CA",
-          "JP"
+          "UK"
         ],
         "platforms": [
           "ios",
@@ -816,383 +870,17 @@
   },
   {
     "title": "AD 47",
-    "startAt": "2022-10-26T14:27:36.000Z",
-    "endAt": "2023-11-13T08:27:38.000Z",
-    "conditions": [
-      {
-        "ageStart": 17,
-        "ageEnd": 34,
-        "gender": "M",
-        "countries": [
-          "AU",
-          "JP",
-          "UK"
-        ],
-        "platforms": [
-          "android"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 48",
-    "startAt": "2025-06-04T22:20:42.000Z",
-    "endAt": "2022-07-29T18:33:57.000Z",
-    "conditions": [
-      {
-        "ageStart": 76,
-        "ageEnd": 75,
-        "gender": "F",
-        "countries": [
-          "CA",
-          "TW"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 49",
-    "startAt": "2021-09-09T06:46:51.000Z",
-    "endAt": "2020-09-17T10:45:45.000Z",
-    "conditions": [
-      {
-        "ageStart": 46,
-        "ageEnd": 52,
-        "gender": "F",
-        "countries": [
-          "US",
-          "AU",
-          "TW",
-          "CA",
-          "UK"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 50",
-    "startAt": "2024-02-24T13:25:56.000Z",
-    "endAt": "2024-01-20T03:18:47.000Z",
-    "conditions": [
-      {
-        "ageStart": 49,
-        "ageEnd": 49,
-        "gender": "F",
-        "countries": [
-          "TW",
-          "JP",
-          "CA",
-          "AU",
-          "UK"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 51",
-    "startAt": "2020-08-07T20:44:52.000Z",
-    "endAt": "2025-07-23T16:59:36.000Z",
-    "conditions": [
-      {
-        "ageStart": 95,
-        "ageEnd": 66,
-        "gender": "F",
-        "countries": [
-          "CA",
-          "AU",
-          "TW",
-          "UK"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 52",
-    "startAt": "2025-08-22T00:27:36.000Z",
-    "endAt": "2024-08-06T07:35:15.000Z",
-    "conditions": [
-      {
-        "ageStart": 30,
-        "ageEnd": 81,
-        "gender": "M",
-        "countries": [
-          "US",
-          "JP",
-          "AU",
-          "UK",
-          "CA"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 53",
-    "startAt": "2020-12-11T03:01:44.000Z",
-    "endAt": "2023-06-15T10:43:41.000Z",
-    "conditions": [
-      {
-        "ageStart": 75,
-        "ageEnd": 16,
-        "gender": "M",
-        "countries": [
-          "US",
-          "CA"
-        ],
-        "platforms": [
-          "ios",
-          "web"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 54",
-    "startAt": "2020-12-27T02:56:52.000Z",
-    "endAt": "2020-06-03T16:00:21.000Z",
-    "conditions": [
-      {
-        "ageStart": 64,
-        "ageEnd": 51,
-        "gender": "M",
-        "countries": [
-          "UK",
-          "TW",
-          "JP",
-          "US"
-        ],
-        "platforms": [
-          "ios",
-          "web"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 55",
-    "startAt": "2022-03-25T05:03:20.000Z",
-    "endAt": "2024-12-12T14:02:31.000Z",
-    "conditions": [
-      {
-        "ageStart": 38,
-        "ageEnd": 47,
-        "gender": "F",
-        "countries": [
-          "AU",
-          "TW",
-          "US"
-        ],
-        "platforms": [
-          "android",
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 56",
-    "startAt": "2021-07-11T07:29:48.000Z",
-    "endAt": "2023-11-12T16:21:18.000Z",
-    "conditions": [
-      {
-        "ageStart": 79,
-        "ageEnd": 31,
-        "gender": "M"
-      }
-    ]
-  },
-  {
-    "title": "AD 57",
-    "startAt": "2020-07-11T20:26:17.000Z",
-    "endAt": "2024-04-01T00:32:09.000Z",
-    "conditions": [
-      {
-        "ageStart": 62,
-        "ageEnd": 54,
-        "gender": "F",
-        "countries": [
-          "CA",
-          "TW",
-          "AU"
-        ],
-        "platforms": [
-          "ios",
-          "android"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 58",
-    "startAt": "2021-03-16T15:16:02.000Z",
-    "endAt": "2024-02-11T17:39:54.000Z",
-    "conditions": [
-      {
-        "ageStart": 62,
-        "ageEnd": 87,
-        "gender": "M",
-        "countries": [
-          "UK"
-        ],
-        "platforms": [
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 59",
-    "startAt": "2022-10-09T19:59:14.000Z",
-    "endAt": "2020-05-12T10:47:30.000Z",
-    "conditions": [
-      {
-        "ageStart": 96,
-        "ageEnd": 55,
-        "gender": "M",
-        "platforms": [
-          "ios",
-          "web"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 60",
-    "startAt": "2023-09-13T09:37:44.000Z",
-    "endAt": "2022-10-24T13:46:57.000Z",
-    "conditions": [
-      {
-        "ageStart": 30,
-        "ageEnd": 91,
-        "gender": "F",
-        "countries": [
-          "JP"
-        ],
-        "platforms": [
-          "android",
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 61",
-    "startAt": "2024-01-15T13:25:10.000Z",
-    "endAt": "2021-06-26T23:04:23.000Z",
-    "conditions": [
-      {
-        "ageStart": 37,
-        "ageEnd": 41,
-        "gender": "F",
-        "countries": [
-          "AU",
-          "TW",
-          "CA",
-          "JP"
-        ],
-        "platforms": [
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 62",
-    "startAt": "2023-09-09T23:44:52.000Z",
-    "endAt": "2025-10-02T16:46:12.000Z",
-    "conditions": [
-      {
-        "ageStart": 3,
-        "ageEnd": 28,
-        "gender": "M",
-        "platforms": [
-          "web"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 63",
-    "startAt": "2022-10-18T05:54:07.000Z",
-    "endAt": "2021-07-04T07:42:55.000Z",
-    "conditions": [
-      {
-        "ageStart": 82,
-        "ageEnd": 38,
-        "gender": "F",
-        "countries": [
-          "AU",
-          "JP",
-          "UK",
-          "TW",
-          "CA"
-        ],
-        "platforms": [
-          "ios",
-          "web"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 64",
-    "startAt": "2022-07-15T23:36:41.000Z",
-    "endAt": "2025-10-15T21:52:10.000Z",
+    "startAt": "2022-10-19T05:44:34.000Z",
+    "endAt": "2020-05-25T14:25:01.000Z",
     "conditions": [
       {
         "ageStart": 88,
-        "ageEnd": 95,
-        "gender": "M",
+        "ageEnd": 45,
+        "gender": "F",
         "countries": [
           "AU",
-          "TW"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 65",
-    "startAt": "2025-06-21T05:49:52.000Z",
-    "endAt": "2024-03-29T17:49:58.000Z",
-    "conditions": [
-      {
-        "ageStart": 77,
-        "ageEnd": 87,
-        "gender": "M",
-        "countries": [
-          "TW",
-          "CA",
-          "JP",
-          "US",
-          "UK"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 66",
-    "startAt": "2024-02-10T06:13:02.000Z",
-    "endAt": "2025-04-01T18:11:57.000Z",
-    "conditions": [
-      {
-        "ageStart": 33,
-        "ageEnd": 17,
-        "gender": "M",
-        "countries": [
-          "JP",
-          "AU"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 67",
-    "startAt": "2025-07-06T12:00:15.000Z",
-    "endAt": "2021-11-11T05:52:23.000Z",
-    "conditions": [
-      {
-        "ageStart": 34,
-        "ageEnd": 80,
-        "gender": "F",
+          "JP"
+        ],
         "platforms": [
           "web",
           "android"
@@ -1201,18 +889,392 @@
     ]
   },
   {
-    "title": "AD 68",
-    "startAt": "2025-04-17T14:17:57.000Z",
-    "endAt": "2025-04-27T01:30:05.000Z",
+    "title": "AD 48",
+    "startAt": "2022-07-05T16:13:18.000Z",
+    "endAt": "2025-11-28T03:07:36.000Z",
     "conditions": [
       {
-        "ageStart": 56,
-        "ageEnd": 85,
+        "ageStart": 95,
+        "ageEnd": 67,
+        "gender": "M",
+        "countries": [
+          "UK",
+          "CA",
+          "JP"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 49",
+    "startAt": "2020-01-09T15:07:59.000Z",
+    "endAt": "2021-01-03T04:37:48.000Z",
+    "conditions": [
+      {
+        "ageStart": 60,
+        "ageEnd": 97,
+        "gender": "M",
+        "countries": [
+          "UK"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 50",
+    "startAt": "2025-07-31T21:17:36.000Z",
+    "endAt": "2024-05-17T15:12:56.000Z",
+    "conditions": [
+      {
+        "ageStart": 30,
+        "ageEnd": 51,
         "gender": "M",
         "countries": [
           "TW",
+          "UK",
+          "JP",
+          "US",
+          "CA"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 51",
+    "startAt": "2023-11-26T18:22:17.000Z",
+    "endAt": "2023-08-06T01:27:43.000Z",
+    "conditions": [
+      {
+        "ageStart": 37,
+        "ageEnd": 23,
+        "gender": "M",
+        "countries": [
+          "JP"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 52",
+    "startAt": "2024-10-11T02:29:47.000Z",
+    "endAt": "2022-11-19T23:00:14.000Z",
+    "conditions": [
+      {
+        "ageStart": 97,
+        "ageEnd": 88,
+        "gender": "M",
+        "countries": [
+          "JP",
+          "TW",
+          "CA",
+          "AU",
+          "US"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 53",
+    "startAt": "2025-02-18T04:41:47.000Z",
+    "endAt": "2023-10-15T23:17:29.000Z",
+    "conditions": [
+      {
+        "ageStart": 79,
+        "ageEnd": 57,
+        "gender": "M",
+        "countries": [
           "US",
           "AU"
+        ],
+        "platforms": [
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 54",
+    "startAt": "2020-04-25T21:25:37.000Z",
+    "endAt": "2023-04-16T22:18:03.000Z",
+    "conditions": [
+      {
+        "ageStart": 97,
+        "ageEnd": 62,
+        "gender": "F",
+        "countries": [
+          "US",
+          "UK"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 55",
+    "startAt": "2024-08-06T14:35:39.000Z",
+    "endAt": "2021-12-06T05:30:16.000Z",
+    "conditions": [
+      {
+        "ageStart": 41,
+        "ageEnd": 40,
+        "gender": "M",
+        "countries": [],
+        "platforms": [
+          "android"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 56",
+    "startAt": "2024-09-17T02:13:36.000Z",
+    "endAt": "2025-12-11T15:27:49.000Z",
+    "conditions": [
+      {
+        "ageStart": 3,
+        "ageEnd": 47,
+        "gender": "M",
+        "countries": [
+          "AU"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 57",
+    "startAt": "2023-08-16T17:00:50.000Z",
+    "endAt": "2023-10-30T14:24:58.000Z",
+    "conditions": [
+      {
+        "ageStart": 34,
+        "ageEnd": 35,
+        "gender": "F",
+        "countries": [
+          "US",
+          "AU",
+          "UK",
+          "TW",
+          "CA"
+        ],
+        "platforms": [
+          "web",
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 58",
+    "startAt": "2024-04-04T21:52:26.000Z",
+    "endAt": "2020-07-20T20:42:11.000Z",
+    "conditions": [
+      {
+        "ageStart": 62,
+        "ageEnd": 100,
+        "gender": "M",
+        "countries": [],
+        "platforms": [
+          "android",
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 59",
+    "startAt": "2024-09-14T16:42:43.000Z",
+    "endAt": "2023-05-31T05:49:24.000Z",
+    "conditions": [
+      {
+        "ageStart": 29,
+        "ageEnd": 86,
+        "gender": "M",
+        "countries": [],
+        "platforms": [
+          "android"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 60",
+    "startAt": "2020-06-12T14:42:50.000Z",
+    "endAt": "2025-11-21T10:36:30.000Z",
+    "conditions": [
+      {
+        "ageStart": 36,
+        "ageEnd": 50,
+        "gender": "M",
+        "countries": [
+          "AU",
+          "CA"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 61",
+    "startAt": "2024-02-03T10:58:48.000Z",
+    "endAt": "2020-04-11T23:35:43.000Z",
+    "conditions": [
+      {
+        "ageStart": 73,
+        "ageEnd": 28,
+        "gender": "M",
+        "countries": [
+          "AU",
+          "CA",
+          "US"
+        ],
+        "platforms": [
+          "android"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 62",
+    "startAt": "2020-01-01T17:25:52.000Z",
+    "endAt": "2024-04-01T06:32:57.000Z",
+    "conditions": [
+      {
+        "ageStart": 62,
+        "ageEnd": 6,
+        "gender": "M",
+        "countries": [
+          "CA",
+          "US"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 63",
+    "startAt": "2020-07-10T22:27:58.000Z",
+    "endAt": "2024-10-10T19:33:32.000Z",
+    "conditions": [
+      {
+        "ageStart": 50,
+        "ageEnd": 66,
+        "gender": "M",
+        "countries": [
+          "UK",
+          "AU",
+          "TW",
+          "JP"
+        ],
+        "platforms": [
+          "web",
+          "android"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 64",
+    "startAt": "2022-08-25T07:43:59.000Z",
+    "endAt": "2024-05-15T08:46:59.000Z",
+    "conditions": [
+      {
+        "ageStart": 35,
+        "ageEnd": 20,
+        "gender": "F",
+        "countries": [],
+        "platforms": [
+          "android",
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 65",
+    "startAt": "2020-01-16T01:28:51.000Z",
+    "endAt": "2023-01-26T11:31:03.000Z",
+    "conditions": [
+      {
+        "ageStart": 8,
+        "ageEnd": 52,
+        "gender": "M",
+        "countries": [
+          "AU",
+          "TW",
+          "US"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 66",
+    "startAt": "2025-03-06T09:40:33.000Z",
+    "endAt": "2023-10-21T17:48:30.000Z",
+    "conditions": [
+      {
+        "ageStart": 71,
+        "ageEnd": 68,
+        "gender": "F",
+        "countries": [
+          "JP",
+          "CA"
+        ],
+        "platforms": [
+          "ios",
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 67",
+    "startAt": "2021-01-08T13:12:08.000Z",
+    "endAt": "2020-06-03T02:57:33.000Z",
+    "conditions": [
+      {
+        "ageStart": 63,
+        "ageEnd": 95,
+        "gender": "M",
+        "countries": [
+          "AU",
+          "JP",
+          "UK",
+          "CA"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 68",
+    "startAt": "2021-08-28T03:38:35.000Z",
+    "endAt": "2023-12-20T18:30:51.000Z",
+    "conditions": [
+      {
+        "ageStart": 82,
+        "ageEnd": 23,
+        "gender": "M",
+        "countries": [
+          "TW",
+          "JP",
+          "US"
         ],
         "platforms": [
           "web",
@@ -1223,527 +1285,108 @@
   },
   {
     "title": "AD 69",
-    "startAt": "2022-12-08T09:49:39.000Z",
-    "endAt": "2025-02-11T21:57:18.000Z",
+    "startAt": "2025-12-06T11:36:52.000Z",
+    "endAt": "2024-08-13T21:09:54.000Z",
     "conditions": [
       {
-        "ageStart": 71,
-        "ageEnd": 85,
-        "gender": "M",
+        "ageStart": 10,
+        "ageEnd": 97,
+        "gender": "F",
         "countries": [
+          "TW",
+          "AU",
           "UK",
-          "AU"
+          "CA"
         ],
         "platforms": [
-          "web"
+          "ios",
+          "android"
         ]
       }
     ]
   },
   {
     "title": "AD 70",
-    "startAt": "2023-12-22T13:03:25.000Z",
-    "endAt": "2024-10-08T07:06:47.000Z",
+    "startAt": "2022-06-23T00:19:42.000Z",
+    "endAt": "2020-01-01T16:24:41.000Z",
     "conditions": [
       {
-        "ageStart": 26,
-        "ageEnd": 19,
-        "gender": "M",
+        "ageStart": 35,
+        "ageEnd": 97,
+        "gender": "F",
         "countries": [
-          "AU",
           "UK",
           "CA",
-          "TW"
+          "JP"
+        ],
+        "platforms": [
+          "ios",
+          "android"
         ]
       }
     ]
   },
   {
     "title": "AD 71",
-    "startAt": "2020-09-30T11:45:03.000Z",
-    "endAt": "2023-04-20T00:13:23.000Z",
+    "startAt": "2024-08-18T08:08:11.000Z",
+    "endAt": "2024-09-29T17:18:06.000Z",
     "conditions": [
       {
-        "ageStart": 9,
-        "ageEnd": 19,
+        "ageStart": 22,
+        "ageEnd": 84,
         "gender": "F",
-        "countries": [
-          "CA",
-          "JP"
-        ],
+        "countries": [],
         "platforms": [
-          "web"
+          "android",
+          "ios"
         ]
       }
     ]
   },
   {
     "title": "AD 72",
-    "startAt": "2022-02-27T13:19:20.000Z",
-    "endAt": "2022-10-06T04:46:24.000Z",
+    "startAt": "2021-09-12T18:28:22.000Z",
+    "endAt": "2021-08-16T14:38:09.000Z",
     "conditions": [
       {
-        "ageStart": 95,
-        "ageEnd": 7,
+        "ageStart": 87,
+        "ageEnd": 58,
         "gender": "F",
         "countries": [
-          "UK",
-          "AU",
-          "CA"
+          "AU"
         ],
-        "platforms": [
-          "android"
-        ]
+        "platforms": []
       }
     ]
   },
   {
     "title": "AD 73",
-    "startAt": "2023-04-10T04:16:51.000Z",
-    "endAt": "2020-05-24T10:53:16.000Z",
+    "startAt": "2021-11-03T01:02:20.000Z",
+    "endAt": "2024-08-16T19:54:01.000Z",
     "conditions": [
       {
-        "ageStart": 35,
-        "ageEnd": 12,
-        "gender": "M",
+        "ageStart": 47,
+        "ageEnd": 19,
+        "gender": "F",
         "countries": [
-          "US",
-          "CA",
-          "JP"
+          "JP",
+          "US"
         ],
-        "platforms": [
-          "web"
-        ]
+        "platforms": []
       }
     ]
   },
   {
     "title": "AD 74",
-    "startAt": "2025-02-26T05:17:21.000Z",
-    "endAt": "2023-05-27T08:56:34.000Z",
+    "startAt": "2022-08-13T14:38:42.000Z",
+    "endAt": "2020-01-14T10:13:35.000Z",
     "conditions": [
       {
-        "ageStart": 9,
-        "ageEnd": 54,
+        "ageStart": 2,
+        "ageEnd": 48,
         "gender": "M",
         "countries": [
           "US"
-        ],
-        "platforms": [
-          "android"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 75",
-    "startAt": "2020-03-05T12:32:04.000Z",
-    "endAt": "2020-10-25T13:21:49.000Z",
-    "conditions": [
-      {
-        "ageStart": 60,
-        "ageEnd": 89,
-        "gender": "M",
-        "countries": [
-          "AU",
-          "UK",
-          "TW"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 76",
-    "startAt": "2025-10-02T11:20:09.000Z",
-    "endAt": "2025-02-01T01:05:02.000Z",
-    "conditions": [
-      {
-        "ageStart": 84,
-        "ageEnd": 100,
-        "gender": "M",
-        "countries": [
-          "AU"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 77",
-    "startAt": "2020-12-22T17:41:55.000Z",
-    "endAt": "2023-11-01T20:32:50.000Z",
-    "conditions": [
-      {
-        "ageStart": 93,
-        "ageEnd": 21,
-        "gender": "M"
-      }
-    ]
-  },
-  {
-    "title": "AD 78",
-    "startAt": "2023-08-21T11:41:30.000Z",
-    "endAt": "2023-10-19T15:47:49.000Z",
-    "conditions": [
-      {
-        "ageStart": 99,
-        "ageEnd": 80,
-        "gender": "F"
-      }
-    ]
-  },
-  {
-    "title": "AD 79",
-    "startAt": "2023-05-15T11:31:05.000Z",
-    "endAt": "2021-05-15T07:43:05.000Z",
-    "conditions": [
-      {
-        "ageStart": 8,
-        "ageEnd": 95,
-        "gender": "M",
-        "platforms": [
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 80",
-    "startAt": "2021-06-18T16:55:40.000Z",
-    "endAt": "2020-06-06T08:54:05.000Z",
-    "conditions": [
-      {
-        "ageStart": 88,
-        "ageEnd": 84,
-        "gender": "F",
-        "countries": [
-          "CA",
-          "AU",
-          "UK",
-          "US",
-          "TW"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 81",
-    "startAt": "2024-11-22T14:16:38.000Z",
-    "endAt": "2025-09-01T10:54:36.000Z",
-    "conditions": [
-      {
-        "ageStart": 95,
-        "ageEnd": 42,
-        "gender": "M",
-        "countries": [
-          "CA",
-          "UK",
-          "AU",
-          "US"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 82",
-    "startAt": "2022-06-03T16:00:01.000Z",
-    "endAt": "2022-12-20T14:46:10.000Z",
-    "conditions": [
-      {
-        "ageStart": 78,
-        "ageEnd": 81,
-        "gender": "F",
-        "countries": [
-          "CA",
-          "US",
-          "JP"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 83",
-    "startAt": "2020-12-02T06:45:02.000Z",
-    "endAt": "2024-07-27T22:26:34.000Z",
-    "conditions": [
-      {
-        "ageStart": 62,
-        "ageEnd": 53,
-        "gender": "M",
-        "countries": [
-          "TW"
-        ],
-        "platforms": [
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 84",
-    "startAt": "2020-01-27T07:00:06.000Z",
-    "endAt": "2022-12-14T16:12:17.000Z",
-    "conditions": [
-      {
-        "ageStart": 44,
-        "ageEnd": 99,
-        "gender": "F",
-        "countries": [
-          "US",
-          "CA"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 85",
-    "startAt": "2021-04-20T04:30:44.000Z",
-    "endAt": "2025-05-23T20:26:54.000Z",
-    "conditions": [
-      {
-        "ageStart": 40,
-        "ageEnd": 5,
-        "gender": "F",
-        "countries": [
-          "CA"
-        ],
-        "platforms": [
-          "web",
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 86",
-    "startAt": "2020-06-08T23:37:40.000Z",
-    "endAt": "2023-12-06T02:17:37.000Z",
-    "conditions": [
-      {
-        "ageStart": 69,
-        "ageEnd": 91,
-        "gender": "F",
-        "countries": [
-          "UK",
-          "CA",
-          "AU",
-          "TW",
-          "US"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 87",
-    "startAt": "2020-08-05T03:52:39.000Z",
-    "endAt": "2022-12-23T02:34:31.000Z",
-    "conditions": [
-      {
-        "ageStart": 75,
-        "ageEnd": 74,
-        "gender": "M",
-        "platforms": [
-          "web",
-          "android"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 88",
-    "startAt": "2021-07-10T06:31:43.000Z",
-    "endAt": "2025-04-13T04:23:03.000Z",
-    "conditions": [
-      {
-        "ageStart": 84,
-        "ageEnd": 28,
-        "gender": "F",
-        "countries": [
-          "AU",
-          "US"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 89",
-    "startAt": "2020-05-04T05:49:29.000Z",
-    "endAt": "2025-12-10T12:33:59.000Z",
-    "conditions": [
-      {
-        "ageStart": 9,
-        "ageEnd": 41,
-        "gender": "M",
-        "countries": [
-          "CA",
-          "US",
-          "AU"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 90",
-    "startAt": "2024-04-09T10:44:15.000Z",
-    "endAt": "2021-01-22T17:34:01.000Z",
-    "conditions": [
-      {
-        "ageStart": 79,
-        "ageEnd": 43,
-        "gender": "M",
-        "countries": [
-          "AU"
-        ],
-        "platforms": [
-          "android"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 91",
-    "startAt": "2023-04-19T04:51:42.000Z",
-    "endAt": "2020-09-04T21:23:11.000Z",
-    "conditions": [
-      {
-        "ageStart": 56,
-        "ageEnd": 72,
-        "gender": "M",
-        "platforms": [
-          "web"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 92",
-    "startAt": "2022-02-07T20:16:45.000Z",
-    "endAt": "2020-10-01T10:51:48.000Z",
-    "conditions": [
-      {
-        "ageStart": 47,
-        "ageEnd": 98,
-        "gender": "F",
-        "countries": [
-          "UK",
-          "AU",
-          "JP",
-          "US",
-          "CA"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 93",
-    "startAt": "2021-01-16T04:30:52.000Z",
-    "endAt": "2020-10-19T12:43:09.000Z",
-    "conditions": [
-      {
-        "ageStart": 3,
-        "ageEnd": 51,
-        "gender": "F",
-        "countries": [
-          "JP",
-          "AU",
-          "CA"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 94",
-    "startAt": "2022-09-20T20:55:17.000Z",
-    "endAt": "2020-06-26T18:15:32.000Z",
-    "conditions": [
-      {
-        "ageStart": 34,
-        "ageEnd": 69,
-        "gender": "F",
-        "platforms": [
-          "web",
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 95",
-    "startAt": "2020-08-06T16:19:29.000Z",
-    "endAt": "2024-07-11T15:09:44.000Z",
-    "conditions": [
-      {
-        "ageStart": 11,
-        "ageEnd": 9,
-        "gender": "M",
-        "countries": [
-          "AU",
-          "US",
-          "TW",
-          "UK",
-          "CA"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 96",
-    "startAt": "2024-09-20T14:36:21.000Z",
-    "endAt": "2025-07-18T01:41:55.000Z",
-    "conditions": [
-      {
-        "ageStart": 83,
-        "ageEnd": 55,
-        "gender": "F",
-        "countries": [
-          "TW",
-          "CA",
-          "UK"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 97",
-    "startAt": "2025-05-07T00:43:36.000Z",
-    "endAt": "2023-01-18T21:52:12.000Z",
-    "conditions": [
-      {
-        "ageStart": 95,
-        "ageEnd": 100,
-        "gender": "M",
-        "platforms": [
-          "ios",
-          "web"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 98",
-    "startAt": "2023-09-17T00:02:41.000Z",
-    "endAt": "2025-08-27T17:42:40.000Z",
-    "conditions": [
-      {
-        "ageStart": 81,
-        "ageEnd": 44,
-        "gender": "F",
-        "platforms": [
-          "ios"
-        ]
-      }
-    ]
-  },
-  {
-    "title": "AD 99",
-    "startAt": "2021-04-15T06:31:07.000Z",
-    "endAt": "2022-11-03T17:28:55.000Z",
-    "conditions": [
-      {
-        "ageStart": 28,
-        "ageEnd": 34,
-        "gender": "M",
-        "countries": [
-          "CA"
         ],
         "platforms": [
           "android",
@@ -1753,21 +1396,496 @@
     ]
   },
   {
-    "title": "AD 100",
-    "startAt": "2023-03-02T14:30:38.000Z",
-    "endAt": "2023-03-24T10:38:49.000Z",
+    "title": "AD 75",
+    "startAt": "2021-11-19T14:43:27.000Z",
+    "endAt": "2022-08-11T05:25:31.000Z",
     "conditions": [
       {
-        "ageStart": 46,
-        "ageEnd": 33,
-        "gender": "F",
+        "ageStart": 75,
+        "ageEnd": 32,
+        "gender": "M",
         "countries": [
           "JP",
-          "AU",
+          "US",
+          "UK",
+          "CA"
+        ],
+        "platforms": [
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 76",
+    "startAt": "2021-11-16T06:11:08.000Z",
+    "endAt": "2024-10-28T08:26:38.000Z",
+    "conditions": [
+      {
+        "ageStart": 41,
+        "ageEnd": 61,
+        "gender": "M",
+        "countries": [
+          "JP"
+        ],
+        "platforms": [
+          "android",
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 77",
+    "startAt": "2021-10-24T04:08:27.000Z",
+    "endAt": "2020-06-24T16:43:31.000Z",
+    "conditions": [
+      {
+        "ageStart": 8,
+        "ageEnd": 59,
+        "gender": "F",
+        "countries": [],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 78",
+    "startAt": "2021-12-04T20:22:22.000Z",
+    "endAt": "2025-04-05T03:20:09.000Z",
+    "conditions": [
+      {
+        "ageStart": 99,
+        "ageEnd": 8,
+        "gender": "F",
+        "countries": [
+          "CA"
+        ],
+        "platforms": [
+          "web",
+          "android"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 79",
+    "startAt": "2022-12-17T19:40:40.000Z",
+    "endAt": "2025-09-17T21:27:38.000Z",
+    "conditions": [
+      {
+        "ageStart": 72,
+        "ageEnd": 11,
+        "gender": "M",
+        "countries": [],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 80",
+    "startAt": "2024-09-20T02:27:51.000Z",
+    "endAt": "2022-05-09T18:02:52.000Z",
+    "conditions": [
+      {
+        "ageStart": 12,
+        "ageEnd": 40,
+        "gender": "F",
+        "countries": [],
+        "platforms": [
+          "android",
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 81",
+    "startAt": "2023-03-01T05:10:55.000Z",
+    "endAt": "2024-06-14T02:36:07.000Z",
+    "conditions": [
+      {
+        "ageStart": 90,
+        "ageEnd": 4,
+        "gender": "F",
+        "countries": [
+          "TW",
+          "JP",
+          "UK"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 82",
+    "startAt": "2023-01-21T22:09:45.000Z",
+    "endAt": "2024-07-05T14:04:18.000Z",
+    "conditions": [
+      {
+        "ageStart": 53,
+        "ageEnd": 5,
+        "gender": "M",
+        "countries": [
+          "US",
+          "UK"
+        ],
+        "platforms": [
+          "ios",
+          "android"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 83",
+    "startAt": "2025-02-24T17:17:34.000Z",
+    "endAt": "2020-07-15T11:07:08.000Z",
+    "conditions": [
+      {
+        "ageStart": 69,
+        "ageEnd": 34,
+        "gender": "F",
+        "countries": [
+          "TW"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 84",
+    "startAt": "2025-04-27T10:47:44.000Z",
+    "endAt": "2024-04-17T12:29:52.000Z",
+    "conditions": [
+      {
+        "ageStart": 34,
+        "ageEnd": 15,
+        "gender": "M",
+        "countries": [
+          "UK",
           "US"
         ],
         "platforms": [
+          "android",
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 85",
+    "startAt": "2024-01-18T05:36:09.000Z",
+    "endAt": "2022-01-29T13:36:28.000Z",
+    "conditions": [
+      {
+        "ageStart": 95,
+        "ageEnd": 80,
+        "gender": "F",
+        "countries": [
+          "AU",
+          "CA"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 86",
+    "startAt": "2022-09-13T03:26:06.000Z",
+    "endAt": "2020-04-15T16:52:06.000Z",
+    "conditions": [
+      {
+        "ageStart": 87,
+        "ageEnd": 31,
+        "gender": "F",
+        "countries": [
+          "UK",
+          "TW"
+        ],
+        "platforms": [
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 87",
+    "startAt": "2020-12-17T07:30:17.000Z",
+    "endAt": "2025-11-23T12:47:20.000Z",
+    "conditions": [
+      {
+        "ageStart": 76,
+        "ageEnd": 37,
+        "gender": "M",
+        "countries": [
+          "UK",
+          "US",
+          "CA",
+          "TW"
+        ],
+        "platforms": [
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 88",
+    "startAt": "2025-09-22T02:55:15.000Z",
+    "endAt": "2024-10-29T07:13:26.000Z",
+    "conditions": [
+      {
+        "ageStart": 7,
+        "ageEnd": 90,
+        "gender": "F",
+        "countries": [
+          "US",
+          "JP",
+          "AU",
+          "TW",
+          "CA"
+        ],
+        "platforms": [
+          "web",
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 89",
+    "startAt": "2023-10-25T00:28:34.000Z",
+    "endAt": "2021-04-28T23:18:47.000Z",
+    "conditions": [
+      {
+        "ageStart": 82,
+        "ageEnd": 17,
+        "gender": "F",
+        "countries": [
+          "US",
+          "TW",
+          "AU",
+          "JP",
+          "UK"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 90",
+    "startAt": "2023-11-10T22:06:05.000Z",
+    "endAt": "2024-09-09T01:54:24.000Z",
+    "conditions": [
+      {
+        "ageStart": 68,
+        "ageEnd": 25,
+        "gender": "M",
+        "countries": [
+          "US",
+          "TW",
+          "AU",
+          "CA",
+          "JP"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 91",
+    "startAt": "2023-11-09T21:38:55.000Z",
+    "endAt": "2023-06-26T00:41:40.000Z",
+    "conditions": [
+      {
+        "ageStart": 17,
+        "ageEnd": 20,
+        "gender": "M",
+        "countries": [
+          "AU",
+          "UK",
+          "TW",
+          "US"
+        ],
+        "platforms": [
+          "ios",
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 92",
+    "startAt": "2023-03-13T21:32:07.000Z",
+    "endAt": "2023-11-11T15:34:06.000Z",
+    "conditions": [
+      {
+        "ageStart": 14,
+        "ageEnd": 17,
+        "gender": "M",
+        "countries": [
+          "CA",
+          "TW"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 93",
+    "startAt": "2021-02-24T13:46:24.000Z",
+    "endAt": "2022-12-06T18:46:14.000Z",
+    "conditions": [
+      {
+        "ageStart": 99,
+        "ageEnd": 60,
+        "gender": "F",
+        "countries": [
+          "CA",
+          "US"
+        ],
+        "platforms": [
+          "web",
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 94",
+    "startAt": "2024-11-02T17:36:02.000Z",
+    "endAt": "2023-09-18T22:13:37.000Z",
+    "conditions": [
+      {
+        "ageStart": 69,
+        "ageEnd": 39,
+        "gender": "F",
+        "countries": [
+          "JP",
+          "CA",
+          "TW",
+          "US",
+          "UK"
+        ],
+        "platforms": [
+          "ios",
           "android"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 95",
+    "startAt": "2020-05-19T05:31:18.000Z",
+    "endAt": "2021-12-28T16:28:16.000Z",
+    "conditions": [
+      {
+        "ageStart": 7,
+        "ageEnd": 67,
+        "gender": "M",
+        "countries": [
+          "AU",
+          "UK",
+          "US",
+          "JP",
+          "CA"
+        ],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 96",
+    "startAt": "2021-09-13T13:27:22.000Z",
+    "endAt": "2020-02-12T23:22:13.000Z",
+    "conditions": [
+      {
+        "ageStart": 92,
+        "ageEnd": 78,
+        "gender": "M",
+        "countries": [
+          "UK",
+          "TW",
+          "CA"
+        ],
+        "platforms": [
+          "android",
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 97",
+    "startAt": "2023-12-16T19:18:45.000Z",
+    "endAt": "2021-03-24T10:05:17.000Z",
+    "conditions": [
+      {
+        "ageStart": 16,
+        "ageEnd": 4,
+        "gender": "F",
+        "countries": [],
+        "platforms": [
+          "web"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 98",
+    "startAt": "2023-10-20T00:50:40.000Z",
+    "endAt": "2024-10-21T03:42:38.000Z",
+    "conditions": [
+      {
+        "ageStart": 2,
+        "ageEnd": 50,
+        "gender": "F",
+        "countries": [],
+        "platforms": [
+          "ios"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AD 99",
+    "startAt": "2020-02-12T12:17:11.000Z",
+    "endAt": "2023-02-28T23:07:17.000Z",
+    "conditions": [
+      {
+        "ageStart": 76,
+        "ageEnd": 15,
+        "gender": "M",
+        "countries": [
+          "US",
+          "CA"
+        ],
+        "platforms": []
+      }
+    ]
+  },
+  {
+    "title": "AD 100",
+    "startAt": "2020-03-23T20:25:14.000Z",
+    "endAt": "2021-07-06T19:39:03.000Z",
+    "conditions": [
+      {
+        "ageStart": 96,
+        "ageEnd": 74,
+        "gender": "F",
+        "countries": [],
+        "platforms": [
+          "android",
+          "web"
         ]
       }
     ]
