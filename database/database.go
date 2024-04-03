@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"math/rand"
+	"strings"
 	"time"
 
 	"gorm.io/driver/postgres"
@@ -15,14 +16,14 @@ import (
 
 var Db *gorm.DB
 
-// make sure your function start with uppercase to call outside of the directory.
 func ConnectDatabase(dsn string) {
 
-	_, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
+	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic("failed to connect database")
 	}
 	fmt.Println("Successfully connected to database and created a ads table!")
+	Db = db
 }
 
 // Initialize the database and create a table
@@ -64,16 +65,47 @@ func InsertRandomData(db *gorm.DB, count int) error {
 		ageStart, ageEnd := generateRandomAge()
 
 		ad := models.AdsColumn{
-			Title:     fmt.Sprintf("AD-%02d", i+1),
-			StartAt:   generateRandomTime(),
-			EndAt:     generateRandomTime(),
-			AgeStart:  ageStart,
-			AgeEnd:    ageEnd,
-			Gender:    randomGender(),
-			Countries: randomCountries(),
-			Platforms: randomPlatforms(),
+			Title:    fmt.Sprintf("AD-%02d", i+1),
+			StartAt:  generateRandomTime(),
+			EndAt:    generateRandomTime(),
+			AgeStart: ageStart,
+			AgeEnd:   ageEnd,
+			Gender:   randomGender(),
+			Country:  randomCountries(),
+			Platform: randomPlatforms(),
 		}
 		if err := db.Create(&ad).Error; err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+// InsertData data into the AdsColumn table
+func InsertData(ad models.Ad) error {
+	for _, condition := range ad.Conditions {
+		startAtTime, err := time.Parse("2006-01-02T15:04:05.000Z", ad.StartAt)
+		if err != nil {
+			return err
+		}
+
+		endAtTime, err := time.Parse("2006-01-02T15:04:05.000Z", ad.EndAt)
+		if err != nil {
+			return err
+		}
+
+		ad := models.AdsColumn{
+			Title:    ad.Title,
+			StartAt:  startAtTime,
+			EndAt:    endAtTime,
+			AgeStart: condition.AgeStart,
+			AgeEnd:   condition.AgeEnd,
+			Gender:   condition.Gender,
+			Country:  strings.Join(condition.Country, ","),
+			Platform: strings.Join(condition.Platform, ","),
+		}
+
+		if err := Db.Create(&ad).Error; err != nil {
 			return err
 		}
 	}

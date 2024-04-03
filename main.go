@@ -8,6 +8,7 @@ import (
 	"sort"
 	"strconv"
 
+	"ad-proj/controllers"
 	"ad-proj/database"
 	"ad-proj/models"
 
@@ -33,45 +34,6 @@ type AdResponse struct {
 }
 
 var ads []models.Ad
-
-// HTTP POST request, input 2 parameters
-func createAd(c *gin.Context) {
-	// A variable to store new ad which is encoded
-	var newAd models.Ad
-
-	// Decode the newAd, return err if failed
-	if err := c.ShouldBindJSON(&newAd); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
-		return
-	}
-
-	// Check if the newAd is in correct JSON formation
-	if newAd.Title == "" || newAd.StartAt == "" || newAd.EndAt == "" {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Incorrect formation. Title, StartAt, and EndAt are required fields."})
-		return
-	}
-
-	for _, condition := range newAd.Conditions {
-		// Check if AgeStart and AgeEnd are provided, and if provided, check their range
-		if condition.AgeStart != 0 && (condition.AgeStart < 1 || condition.AgeStart > 100) {
-			c.JSON(http.StatusBadRequest, gin.H{"error": "Incorrect formation. AgeStart needs to be in the range from 1 to 100."})
-			return
-		}
-		if condition.AgeEnd != 0 && (condition.AgeEnd < 1 || condition.AgeEnd > 100) {
-			c.JSON(http.StatusBadRequest, gin.H{"error": "Incorrect formation. AgeEnd needs to be in the range from 1 to 100."})
-			return
-		}
-
-		// Check Gender if validate it
-		if condition.Gender != "" && condition.Gender != "F" && condition.Gender != "M" {
-			c.JSON(http.StatusBadRequest, gin.H{"error": "Incorrect formation. Gender needs to be M or F"})
-			return
-		}
-	}
-
-	ads = append(ads, newAd)
-	c.JSON(http.StatusCreated, gin.H{"message": "Post the ad successfully.", "ads": ads})
-}
 
 func listAds(c *gin.Context) {
 	// Parse query parameters
@@ -131,8 +93,8 @@ func filterAd(ad models.Ad, age int, gender string, country string, platform str
 		if (age == 0 || age >= condition.AgeStart) &&
 			(age == 0 || age <= condition.AgeEnd) &&
 			(gender == "" || gender == condition.Gender) &&
-			(country == "" || isInSlice(country, condition.Countries)) &&
-			(platform == "" || isInSlice(platform, condition.Platforms)) {
+			(country == "" || isInSlice(country, condition.Country)) &&
+			(platform == "" || isInSlice(platform, condition.Platform)) {
 			return true
 		}
 	}
@@ -176,11 +138,11 @@ func main() {
 		fmt.Println("Initialization completed.")
 	}
 
-	database.ConnectDatabase(dsn)
-
 	r := gin.Default()
 
-	r.POST("/api/v1/ad", createAd)
+	database.ConnectDatabase(dsn)
+
+	r.POST("/api/v1/ad", controllers.CreateAd)
 	r.GET("/api/v1/ad", listAds)
 
 	fmt.Println("Server is running on port 8088")

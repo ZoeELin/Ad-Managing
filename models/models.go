@@ -16,21 +16,21 @@ type Ad struct {
 
 // Condition represents the conditions for displaying an advertisement
 type Condition struct {
-	AgeStart  int      `json:"ageStart"`
-	AgeEnd    int      `json:"ageEnd"`
-	Gender    string   `json:"gender"`
-	Countries []string `json:"countries"`
-	Platforms []string `json:"platforms"`
+	AgeStart int      `json:"ageStart"`
+	AgeEnd   int      `json:"ageEnd"`
+	Gender   string   `json:"gender"`
+	Country  []string `json:"country"`
+	Platform []string `json:"platform"`
 }
 
 type AdsColumn struct {
-	ID        uint      `gorm:"primaryKey"`
-	Title     string    `gorm:"column:title"`
-	StartAt   time.Time `gorm:"column:start_at"`
-	EndAt     time.Time `gorm:"column:end_at"`
-	AgeStart  int       `gorm:"column:age_start"`
-	AgeEnd    int       `gorm:"column:age_end"`
-	Gender    string    `gorm:"column:gender"`
-	Countries string    `gorm:"column:countries"`
-	Platforms string    `gorm:"column:platforms"`
+	ID       uint      `gorm:"primaryKey"`
+	Title    string    `gorm:"column:title"`
+	StartAt  time.Time `gorm:"column:start_at"`
+	EndAt    time.Time `gorm:"column:end_at"`
+	AgeStart int       `gorm:"column:age_start"`
+	AgeEnd   int       `gorm:"column:age_end"`
+	Gender   string    `gorm:"column:gender"`
+	Country  string    `gorm:"column:country"`
+	Platform string    `gorm:"column:platform"`
 }
