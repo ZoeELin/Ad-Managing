@@ -10,10 +10,10 @@ import (
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 
-	_ "github.com/lib/pq" // don't forget to add it. It doesn't be added automatically
+	_ "github.com/lib/pq"
 )
 
-var Db *gorm.DB //created outside to make it global.
+var Db *gorm.DB
 
 // make sure your function start with uppercase to call outside of the directory.
 func ConnectDatabase(dsn string) {
