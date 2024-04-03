@@ -52,6 +52,7 @@ func createAd(c *gin.Context) {
 	}
 
 	for _, condition := range newAd.Conditions {
+
 		// Check if AgeStart and AgeEnd are provided, and if provided, check their range
 		if condition.AgeStart != 0 && (condition.AgeStart < 1 || condition.AgeStart > 100) {
 			c.JSON(http.StatusBadRequest, gin.H{"error": "Incorrect formation. AgeStart needs to be in the range from 1 to 100."})
@@ -62,15 +63,15 @@ func createAd(c *gin.Context) {
 			return
 		}
 
-		// Check Gender if validate it
+		// Check Gender
 		if condition.Gender != "" && condition.Gender != "F" && condition.Gender != "M" {
 			c.JSON(http.StatusBadRequest, gin.H{"error": "Incorrect formation. Gender needs to be M or F"})
 			return
 		}
 	}
 
-	ads = append(ads, newAd)
-	c.JSON(http.StatusCreated, gin.H{"message": "Post the ad successfully.", "ads": ads})
+	database.InsertData(newAd)
+	c.JSON(http.StatusCreated, gin.H{"message": "Post the ad successfully.", "data": newAd})
 }
 
 func listAds(c *gin.Context) {
@@ -131,8 +132,8 @@ func filterAd(ad models.Ad, age int, gender string, country string, platform str
 		if (age == 0 || age >= condition.AgeStart) &&
 			(age == 0 || age <= condition.AgeEnd) &&
 			(gender == "" || gender == condition.Gender) &&
-			(country == "" || isInSlice(country, condition.Countries)) &&
-			(platform == "" || isInSlice(platform, condition.Platforms)) {
+			(country == "" || isInSlice(country, condition.Country)) &&
+			(platform == "" || isInSlice(platform, condition.Platform)) {
 			return true
 		}
 	}
@@ -176,9 +177,9 @@ func main() {
 		fmt.Println("Initialization completed.")
 	}
 
-	database.ConnectDatabase(dsn)
-
 	r := gin.Default()
+
+	database.ConnectDatabase(dsn)
 
 	r.POST("/api/v1/ad", createAd)
 	r.GET("/api/v1/ad", listAds)
