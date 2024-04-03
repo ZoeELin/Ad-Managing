@@ -25,7 +25,7 @@ func ConnectDatabase(dsn string) {
 	fmt.Println("Successfully connected to database and created a ads table!")
 }
 
-// DbInit initializes the database and inserts random data
+// Initialize the database and create a table
 func DbInit(dsn string) {
 	// Connect to the database
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
@@ -39,24 +39,36 @@ func DbInit(dsn string) {
 		log.Fatalf("Failed to auto migrate tables: %v", err)
 	}
 
+	fmt.Println("Database initialization completed successfully.")
+}
+
+// Insert 100 random data
+func DatasetInit(dsn string) {
+	// Connect to the database
+	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
+	if err != nil {
+		log.Fatalf("Failed to connect to database: %v", err)
+	}
+
 	// Insert random data
 	err = InsertRandomData(db, 100) // Insert 100 random records
 	if err != nil {
 		log.Fatalf("Failed to insert random data: %v", err)
 	}
-
-	fmt.Println("Database initialization completed successfully.")
 }
 
 // InsertRandomData inserts random data into the AdsColumn table
 func InsertRandomData(db *gorm.DB, count int) error {
 	for i := 0; i < count; i++ {
+
+		ageStart, ageEnd := generateRandomAge()
+
 		ad := models.AdsColumn{
-			Title:     fmt.Sprintf("AD %02d", i+1),
+			Title:     fmt.Sprintf("AD-%02d", i+1),
 			StartAt:   generateRandomTime(),
 			EndAt:     generateRandomTime(),
-			AgeStart:  rand.Intn(100) + 1,
-			AgeEnd:    rand.Intn(100) + 1,
+			AgeStart:  ageStart,
+			AgeEnd:    ageEnd,
 			Gender:    randomGender(),
 			Countries: randomCountries(),
 			Platforms: randomPlatforms(),
@@ -66,6 +78,17 @@ func InsertRandomData(db *gorm.DB, count int) error {
 		}
 	}
 	return nil
+}
+
+// Generate the age, notice that AgeStart smaller or equal to AgeEnd
+func generateRandomAge() (int, int) {
+	ageStart := rand.Intn(100) + 1
+	ageEnd := rand.Intn(100) + 1
+	if ageStart >= ageEnd {
+		// Swap AgeStart and AgeEnd if AgeStart is greater than or equal to AgeEnd
+		ageStart, ageEnd = ageEnd, ageStart
+	}
+	return ageStart, ageEnd
 }
 
 // Generate a random time between now and 1 year from now

@@ -150,11 +150,13 @@ func isInSlice(text string, sliceText []string) bool {
 }
 
 func main() {
-	err := godotenv.Load() //by default, it is .env so we don't have to write
+	// Get parameter from .env file
+	err := godotenv.Load()
 	if err != nil {
 		fmt.Println("Error is occurred  on .env file please check")
 	}
-	//we read our .env file
+
+	// Set the parameters to dsn
 	host := os.Getenv("HOST")
 	port, _ := strconv.Atoi(os.Getenv("PORT"))
 	user := "postgres"
@@ -163,16 +165,15 @@ func main() {
 	dsn := fmt.Sprintf("host=%s port=%d user=%s dbname=%s password=%s sslmode=disable",
 		host, port, user, dbname, pass)
 
-	// controller to initiallize the database
+	// Controller to initiallize the database
 	initFlag := flag.Bool("init", false, "Initialize the database")
 	flag.Parse()
 
-	// if add -init, initiallize
+	// if add -init, initiallize db
 	if *initFlag {
 		database.DbInit(dsn)
+		database.DatasetInit(dsn)
 		fmt.Println("Initialization completed.")
-	} else {
-		fmt.Println("No initialization performed.")
 	}
 
 	database.ConnectDatabase(dsn)
