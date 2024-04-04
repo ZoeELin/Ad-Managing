@@ -10,7 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// HTTP POST request, input 2 parameters
+// HTTP POST request, api that can insert ad info to database
 func CreateAd(c *gin.Context) {
 	// A variable to store new ad which is encoded
 	var newAd models.Ad

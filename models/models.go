@@ -34,3 +34,8 @@ type AdsColumn struct {
 	Country  string    `gorm:"column:country"`
 	Platform string    `gorm:"column:platform"`
 }
+
+type AdItem struct {
+	Title string `json:"title"`
+	EndAt string `json:"endAt"`
+}

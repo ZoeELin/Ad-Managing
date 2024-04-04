@@ -112,6 +112,35 @@ func InsertData(ad models.Ad) error {
 	return nil
 }
 
+// SelectData retrieves ads from the dat[error] unsupported data type: &[]abase based on specified criteria
+func SelectData(filteredAds *[]models.AdsColumn, offset int, limit int, age int, gender, country, platform string) error {
+	query := Db.Model(&models.AdsColumn{})
+
+	// Add conditions based on the specified criteria
+	if age != 0 {
+		query = query.Where("age_start <= ? AND age_end >= ?", age, age)
+	}
+	if gender != "" {
+		query = query.Where("gender = ?", gender)
+	}
+	if country != "" {
+		query = query.Where("country LIKE ?", "%"+country+"%")
+	}
+	if platform != "" {
+		query = query.Where("platform LIKE ?", "%"+platform+"%")
+	}
+
+	// Convert EndAt to string for sorting
+	query = query.Order("end_at ASC").Offset(offset).Limit(limit)
+
+	// Execute the query and scan the results into the provided slice
+	if err := query.Find(&filteredAds).Error; err != nil {
+		return err
+	}
+
+	return nil
+}
+
 // Generate the age, notice that AgeStart smaller or equal to AgeEnd
 func generateRandomAge() (int, int) {
 	ageStart := rand.Intn(100) + 1
