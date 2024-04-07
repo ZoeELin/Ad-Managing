@@ -57,10 +57,10 @@ type AdsColumn struct {
 ```
 
 ## Dependencies
-- [!Gin] is a web framework for Go language that focuses on performance and minimalism. 
+- [Gin](https://gin-gonic.com/) is a web framework for Go language that focuses on performance and minimalism. 
     - Gin is designed to be fast and lightweight.
     - It provides a HTTP router that allows you to define routes for handling different HTTP requests (GET, POST, PUT, DELETE, etc.) easily.
-- [!Gorm] is an ORM library for the Go programming language that provide CRUD operations on your database. 
+- [Gorm](https://gorm.io/index.html) is an ORM library for the Go programming language that provide CRUD operations on your database. 
 
 
 ## Quick Start
@@ -79,7 +79,7 @@ Go to http://localhost:5000/api/v1/ad to POST or GET the data.
 ## API Detail
 There are some rule in the system:
 - The maximum number of new ads not exceed 3000 per day.
-- The number of active ads(StartAt < NOW < EndAt) not exceed 1000.
+- The number of active ads(`StartAt` < NOW < `EndAt`) not exceed 1000.
 
 ### Generate ADs
 Sent a POST request to `/api/v1/ad` with the advertisement details in JSON format. 
