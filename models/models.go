@@ -23,7 +23,7 @@ type Condition struct {
 	Platform []string `json:"platform"`
 }
 
-// Columns with AdsColumn table in database
+// Columns within the AdsColumn table in the database.
 type AdsColumn struct {
 	ID       uint      `gorm:"primaryKey"`
 	Title    string    `gorm:"column:title"`

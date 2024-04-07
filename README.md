@@ -27,7 +27,26 @@ This is the assignment of 2024 Dcard backend intern.
     └── models.go
 ```
 - The main program is located in `main.go`.
+- There are two files in the controllers directory, each containing an API function.
+- Database parameters can be configured in the `const ()` block of `main.go`.
+- Any functions that interact with the database are written in `db.go`.
+- `models.go` defines various data types(`Ad`, `Conditions`, `AdsColumn`).
 
+Columns within the AdsColumn table in the database.
+```go
+type AdsColumn struct {
+	ID       uint      `gorm:"primaryKey"`
+	Title    string    `gorm:"column:title"`
+	StartAt  time.Time `gorm:"column:start_at"`
+	EndAt    time.Time `gorm:"column:end_at"`
+	AgeStart int       `gorm:"column:age_start"`
+	AgeEnd   int       `gorm:"column:age_end"`
+	Gender   string    `gorm:"column:gender"`
+	Country  string    `gorm:"column:country"`
+	Platform string    `gorm:"column:platform"`
+}
+
+```
 
 ## Dependencies
 - Gin is a web framework for Go language that focuses on performance and minimalism. 
