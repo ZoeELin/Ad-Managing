@@ -32,6 +32,14 @@ This is the assignment of 2024 Dcard backend intern.
 - Any functions that interact with the database are written in `db.go`.
 - `models.go` defines various data types(`Ad`, `Conditions`, `AdsColumn`).
 
+For testing convenience, upon creating the table in the database, 100 random data entries have been automatically generated and inserted into the database. The related functions are implemented in `db.go`.
+We can manually execute the program, or if database initialization and generation of 100 random data entries are required.
+```bash
+go run main.go
+go run main.go -init
+```
+
+
 Columns within the AdsColumn table in the database.
 ```go
 type AdsColumn struct {
@@ -76,11 +84,11 @@ JSON structure:
 - Title
 - StartAt
 - EndAt
-- Conditions
+- Conditions(optional):
     - Age
-    - Gender (M, F)
-    - Country (TW, JP, US)
-    - Platform (android, ios, web)
+    - Gender(optional):M, F 
+    - Country(optional):TW, JP, US 
+    - Platform(optional): android, ios, web
 
 Example:
 ```bash
