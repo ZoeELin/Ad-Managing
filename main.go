@@ -3,8 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	"os"
-	"strconv"
 
 	"ad-proj/controllers"
 	"ad-proj/database"
@@ -23,14 +21,16 @@ func main() {
 		fmt.Println("Error is occurred  on .env file please check")
 	}
 
-	// Set the parameters to dsn
-	host := os.Getenv("HOST")
-	port, _ := strconv.Atoi(os.Getenv("PORT"))
-	user := "postgres"
-	dbname := "postgres"
-	pass := os.Getenv("PASSWORD")
+	const (
+		// Parameters that db connect to
+		HOST     = "postgres_db"
+		DATABASE = "postgres"
+		USER     = "postgres"
+		PASSWORD = "postgres"
+		PORT     = 5432
+	)
 	dsn := fmt.Sprintf("host=%s port=%d user=%s dbname=%s password=%s sslmode=disable",
-		host, port, user, dbname, pass)
+		HOST, PORT, USER, DATABASE, PASSWORD)
 
 	// Controller to initiallize the database
 	initFlag := flag.Bool("init", false, "Initialize the database")
@@ -51,5 +51,5 @@ func main() {
 	r.GET("/api/v1/ad", controllers.ListAds)
 
 	fmt.Println("Server is running on port 8088")
-	r.Run(":8088")
+	r.Run(":5000")
 }

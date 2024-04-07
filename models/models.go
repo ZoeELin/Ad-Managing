@@ -1,4 +1,4 @@
-// models/ad.go
+// models/models.go
 
 package models
 
@@ -23,6 +23,7 @@ type Condition struct {
 	Platform []string `json:"platform"`
 }
 
+// Columns with AdsColumn table in database
 type AdsColumn struct {
 	ID       uint      `gorm:"primaryKey"`
 	Title    string    `gorm:"column:title"`
@@ -35,6 +36,7 @@ type AdsColumn struct {
 	Platform string    `gorm:"column:platform"`
 }
 
+// Post ads response's datatype structure
 type AdItem struct {
 	Title string `json:"title"`
 	EndAt string `json:"endAt"`
