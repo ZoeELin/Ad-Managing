@@ -7,19 +7,12 @@ import (
 	"ad-proj/controllers"
 	"ad-proj/database"
 
-	"github.com/joho/godotenv"
-
 	_ "github.com/lib/pq"
 
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	// Get parameter from .env file
-	err := godotenv.Load()
-	if err != nil {
-		fmt.Println("Error is occurred  on .env file please check")
-	}
 
 	const (
 		// Parameters that db connect to
