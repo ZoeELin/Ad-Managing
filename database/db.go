@@ -116,8 +116,6 @@ func InsertData(ad models.Ad) error {
 func GetActiveAdsCount() (int64, error) {
 	var count int64
 
-	// query := Db.Model(&models.AdsColumn{})
-
 	// Run a query to calculate the number of active ads here
 	err := Db.Model(&models.AdsColumn{}).Where("start_at < ? AND end_at > ?", time.Now(), time.Now()).Count(&count).Error
 	if err != nil {
