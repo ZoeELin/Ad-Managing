@@ -112,6 +112,21 @@ func InsertData(ad models.Ad) error {
 	return nil
 }
 
+// GetActiveAdsCount returns the count of active ads based on the current time
+func GetActiveAdsCount() (int64, error) {
+	var count int64
+
+	// query := Db.Model(&models.AdsColumn{})
+
+	// Run a query to calculate the number of active ads here
+	err := Db.Model(&models.AdsColumn{}).Where("start_at < ? AND end_at > ?", time.Now(), time.Now()).Count(&count).Error
+	if err != nil {
+		return 0, err
+	}
+
+	return count, nil
+}
+
 // SelectData retrieves ads from the dat[error] unsupported data type: &[]abase based on specified criteria
 func SelectData(filteredAds *[]models.AdsColumn, offset int, limit int, age int, gender, country, platform string) error {
 	query := Db.Model(&models.AdsColumn{})

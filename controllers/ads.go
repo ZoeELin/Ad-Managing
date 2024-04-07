@@ -10,11 +10,31 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+const dailyAdsLimit = 3000
+const activeAdsLimit = 1000
+
+var dailyAdsCounter int
+
 // HTTP POST request, api that can insert ad info to database
 func CreateAd(c *gin.Context) {
-	// A variable to store new ad which is encoded
-	var newAd models.Ad
+	// Check if the maximum number of new ads per day has been exceeded
+	if dailyAdsCounter >= dailyAdsLimit {
+		c.JSON(http.StatusTooManyRequests, gin.H{"error": "Daily ads creation limit reached. Please try again tomorrow."})
+		return
+	}
 
+	// Check if the number of active ads exceeds the limit
+	activeAdsCount, err := database.GetActiveAdsCount()
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to check active ads count."})
+		return
+	}
+	if activeAdsCount >= activeAdsLimit {
+		c.JSON(http.StatusTooManyRequests, gin.H{"error": "Active ads limit reached. Please try again later."})
+		return
+	}
+
+	var newAd models.Ad
 	// Decode the newAd, return err if failed
 	if err := c.ShouldBindJSON(&newAd); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
@@ -47,5 +67,8 @@ func CreateAd(c *gin.Context) {
 	}
 
 	database.InsertData(newAd)
+
+	// Add a counter for the number of ads added per day when an ad is successfully added.
+	dailyAdsCounter++
 	c.JSON(http.StatusCreated, gin.H{"message": "Post the ad successfully.", "data": newAd})
 }

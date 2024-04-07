@@ -16,11 +16,13 @@ func main() {
 
 	const (
 		// Parameters that db connect to
-		HOST     = "postgres_db"
+		HOST = "localhost"
+		// HOST     = "postgres_db"
 		DATABASE = "postgres"
 		USER     = "postgres"
 		PASSWORD = "postgres"
-		PORT     = 5432
+		PORT     = 5400
+		// PORT     = 5432
 	)
 	dsn := fmt.Sprintf("host=%s port=%d user=%s dbname=%s password=%s sslmode=disable",
 		HOST, PORT, USER, DATABASE, PASSWORD)
@@ -44,5 +46,5 @@ func main() {
 	r.GET("/api/v1/ad", controllers.ListAds)
 
 	fmt.Println("Server is running on port 8088")
-	r.Run(":5000")
+	r.Run(":5001")
 }
