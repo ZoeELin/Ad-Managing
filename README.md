@@ -5,8 +5,8 @@ This is the assignment of 2024 Dcard backend intern.
 - [x] Admin API (POST /api/v1/ad)
 - [x] Place API (GET /api/v1/ad)
 - [ ] Test for API that can handle over 10,000 Requests Per Secoud.
-- [ ] Ensure that the total active advertisements in the system (i.e., StartAt < NOW < EndAt) are less than 1000.
-- [ ] Limit the number of advertisements created per day to not exceed 3000.
+- [x] Ensure that the total active advertisements in the system (i.e., StartAt < NOW < EndAt) are less than 1000.
+- [x] Limit the number of advertisements created per day to not exceed 3000.
 
 ## Structure
 ```
