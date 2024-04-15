@@ -1,6 +1,6 @@
-// controllers/ads.go
+// router/create_ads.go
 
-package controllers
+package router
 
 import (
 	"ad-proj/database"

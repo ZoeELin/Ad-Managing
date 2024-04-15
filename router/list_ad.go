@@ -1,11 +1,10 @@
-// controllers/ads.go
+// router/list_ad.go
 
-package controllers
+package router
 
 import (
 	"ad-proj/database"
 	"ad-proj/models"
-	"fmt"
 	"net/http"
 	"strconv"
 
@@ -29,15 +28,12 @@ func ListAds(c *gin.Context) {
 
 	// This is a slice that is compared to specified age, gender, country, platform
 	var filteredAds []models.AdsColumn
-	fmt.Println("&filteredAds ", &filteredAds)
 
 	// SelectData retrieves ads from the database
 	err := database.SelectData(&filteredAds, offset, limit, age, gender, country, platform)
 	if err != nil {
 		panic("Failed to retrieve ads from database")
 	}
-
-	fmt.Println("filteredAds(data after SelectData):", filteredAds)
 
 	// Reorganize data from db to response
 	var items []models.AdItem

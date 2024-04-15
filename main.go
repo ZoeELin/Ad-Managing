@@ -4,8 +4,8 @@ import (
 	"flag"
 	"fmt"
 
-	"ad-proj/controllers"
 	"ad-proj/database"
+	"ad-proj/router"
 
 	_ "github.com/lib/pq"
 
@@ -16,11 +16,11 @@ func main() {
 
 	const (
 		// Parameters that db connect to
-		HOST     = "postgres_db"
+		HOST     = "localhost"
 		DATABASE = "postgres"
 		USER     = "postgres"
 		PASSWORD = "postgres"
-		PORT     = 5432
+		PORT     = 5400
 	)
 	dsn := fmt.Sprintf("host=%s port=%d user=%s dbname=%s password=%s sslmode=disable",
 		HOST, PORT, USER, DATABASE, PASSWORD)
@@ -36,13 +36,11 @@ func main() {
 		fmt.Println("Initialization completed.")
 	}
 
-	r := gin.Default()
-
 	database.ConnectDatabase(dsn)
 
-	r.POST("/api/v1/ad", controllers.CreateAd)
-	r.GET("/api/v1/ad", controllers.ListAds)
+	r := gin.Default()
+	r.POST("/api/v1/ad", router.CreateAd)
+	r.GET("/api/v1/ad", router.ListAds)
 
-	fmt.Println("Server is running on port 8088")
-	r.Run(":5001")
+	r.Run(":8088")
 }
