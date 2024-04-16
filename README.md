@@ -4,9 +4,23 @@ This is the assignment of 2024 Dcard backend intern.
 ## Requirements
 - [x] Admin API (POST /api/v1/ad)
 - [x] Place API (GET /api/v1/ad)
-- [ ] Test for API that can handle over 10,000 Requests Per Secoud.
 - [x] Ensure that the total active advertisements in the system (i.e., StartAt < NOW < EndAt) are less than 1000.
 - [x] Limit the number of advertisements created per day to not exceed 3000.
+- [ ] Test for API that can handle over 10,000 Requests Per Secoud.
+
+
+## Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/ZoeELin/Ad-Managing.git
+cd Ad-Managing
+
+# Start the service
+docker-compose up
+```
+Go to http://localhost:5000/api/v1/ad to POST or GET the data.
+
 
 ## Structure
 ```
@@ -62,18 +76,6 @@ type AdsColumn struct {
     - It provides a HTTP router that allows you to define routes for handling different HTTP requests (GET, POST, PUT, DELETE, etc.) easily.
 - [Gorm](https://gorm.io/index.html) is an ORM library for the Go programming language that provide CRUD operations on your database. 
 
-
-## Quick Start
-
-```bash
-# Clone the repo
-git clone https://github.com/ZoeELin/Ad-Managing.git
-cd Ad-Managing
-
-# Start the service
-docker-compose up
-```
-Go to http://localhost:5000/api/v1/ad to POST or GET the data.
 
 
 ## API Detail
@@ -131,4 +133,7 @@ curl -X GET -H "Content-Type: application/json" \
 
 ## Testing
 
+```
+go test./...
+```
 
