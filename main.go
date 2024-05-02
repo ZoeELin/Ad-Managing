@@ -16,11 +16,11 @@ func main() {
 
 	const (
 		// Parameters that db connect to
-		HOST     = "localhost"
-		DATABASE = "postgres"
-		USER     = "postgres"
-		PASSWORD = "postgres"
-		PORT     = 5400
+		HOST     = "dpg-cof4s30cmk4c7380b7ig-a"
+		DATABASE = "ad_proj"
+		USER     = "admin"
+		PASSWORD = "AD8Mi6fAnpPvoMsXOHeuxOWhRy5Ghrti"
+		PORT     = 5432
 	)
 	dsn := fmt.Sprintf("host=%s port=%d user=%s dbname=%s password=%s sslmode=disable",
 		HOST, PORT, USER, DATABASE, PASSWORD)
