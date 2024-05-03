@@ -11,7 +11,7 @@ This project is an advertising management system for managing advertising placem
 ## Quick Start
 Go to https://ad-managing.onrender.com to view the site.
 
-https://ad-managing.onrender.com/api/v1/ad to GET the data.
+Search from https://ad-managing.onrender.com/api/v1/ad to GET the data.
 
 
 ## Installation and Use
