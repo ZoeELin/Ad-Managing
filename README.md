@@ -9,8 +9,9 @@ This project is an advertising management system for managing advertising placem
 - [ ] Test for API that can handle over 10,000 Requests Per Secoud.
 
 ## Quick Start
+Go to https://ad-managing.onrender.com to view the site.
 
-Go to https://ad-managing.onrender.com/api/v1/ad to GET the data.
+https://ad-managing.onrender.com/api/v1/ad to GET the data.
 
 
 ## Installation and Use
