@@ -1,5 +1,5 @@
 # Ad-Managing
-This is the assignment of 2024 Dcard backend intern.
+This project is an advertising management system for managing advertising placement and tracking results. It is suitable for use by small businesses or individuals to help them manage their advertising campaigns more effectively.
 
 ## Requirements
 - [x] Admin API (POST /api/v1/ad)
@@ -8,18 +8,27 @@ This is the assignment of 2024 Dcard backend intern.
 - [x] Limit the number of advertisements created per day to not exceed 3000.
 - [ ] Test for API that can handle over 10,000 Requests Per Secoud.
 
-
 ## Quick Start
+Open your browser and visit https://ad-managing.onrender.com to test.
+
+Go to https://ad-managing.onrender.com/api/v1/ad to GET the data.
+
+
+## Installation and Use
 
 ```bash
 # Clone the repo
 git clone https://github.com/ZoeELin/Ad-Managing.git
 cd Ad-Managing
 
-# Start the service
+# Web server deploy link
+https://ad-managing.onrender.com
+
+
+# Start the service on local
 docker-compose up
 ```
-Go to http://localhost:5000/api/v1/ad to POST or GET the data.
+
 
 
 ## Structure
@@ -107,7 +116,7 @@ curl -X POST -H "Content-Type: application/json" \
 {
 "ageStart": 28,
 "ageEnd": 45,
-"country": ["TW", "JP", US],
+"country": ["TW", "JP", "US"],
 "platform": ["ios"]
 }
 ]
