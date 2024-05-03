@@ -85,7 +85,6 @@ type AdsColumn struct {
 - [Gorm](https://gorm.io/index.html) is an ORM library for the Go programming language that provide CRUD operations on your database. 
 
 
-
 ## API Detail
 There are some rule in the system:
 - The maximum number of new ads not exceed 3000 per day.
@@ -142,9 +141,11 @@ curl -X POST -H "Content-Type: application/json" \
 ### List ADs 
 Send a GET request to `/api/v1/ad` with the conditions as query parameters to list active advertisements that match specitic conditions.
 
-Parameters:
+Parameters(optional):
 
 - offset, limit: used for pagination
+	- offset is defaulted to 1
+	- limit is defaulted to 5
 - age
 - gender
 - country
