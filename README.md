@@ -28,6 +28,27 @@ https://ad-managing.onrender.com
 docker-compose up
 ```
 
+## Initialize
+Use the following flags for initialization after `-init`
+- Create data table use the `-table` flag.
+- Generate and insert 100 data use the `-dataset` flag.
+
+Columns within the AdsColumn table in the database.
+```go
+type AdsColumn struct {
+	ID       uint      `gorm:"primaryKey"`
+	Title    string    `gorm:"column:title"`
+	StartAt  time.Time `gorm:"column:start_at"`
+	EndAt    time.Time `gorm:"column:end_at"`
+	AgeStart int       `gorm:"column:age_start"`
+	AgeEnd   int       `gorm:"column:age_end"`
+	Gender   string    `gorm:"column:gender"`
+	Country  string    `gorm:"column:country"`
+	Platform string    `gorm:"column:platform"`
+}
+
+```
+
 
 
 ## Structure
@@ -62,21 +83,7 @@ go run main.go -init
 ```
 
 
-Columns within the AdsColumn table in the database.
-```go
-type AdsColumn struct {
-	ID       uint      `gorm:"primaryKey"`
-	Title    string    `gorm:"column:title"`
-	StartAt  time.Time `gorm:"column:start_at"`
-	EndAt    time.Time `gorm:"column:end_at"`
-	AgeStart int       `gorm:"column:age_start"`
-	AgeEnd   int       `gorm:"column:age_end"`
-	Gender   string    `gorm:"column:gender"`
-	Country  string    `gorm:"column:country"`
-	Platform string    `gorm:"column:platform"`
-}
 
-```
 
 ## Dependencies
 - [Gin](https://gin-gonic.com/) is a web framework for Go language that focuses on performance and minimalism. 

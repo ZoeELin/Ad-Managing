@@ -40,7 +40,7 @@ func DbInit(dsn string) {
 		log.Fatalf("Failed to auto migrate tables: %v", err)
 	}
 
-	fmt.Println("Database initialization completed successfully.")
+	fmt.Println("Create table successfully")
 }
 
 // Insert 100 random data
@@ -56,6 +56,7 @@ func DatasetInit(dsn string) {
 	if err != nil {
 		log.Fatalf("Failed to insert random data: %v", err)
 	}
+	fmt.Println("Create 100 dataset successfully")
 }
 
 // InsertRandomData inserts random data into the AdsColumn table

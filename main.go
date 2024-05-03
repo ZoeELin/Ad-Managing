@@ -16,8 +16,8 @@ func main() {
 
 	const (
 		// Parameters that db connect to
-		HOST = "dpg-cof4s30cmk4c7380b7ig-a"
-		// HOST     = "dpg-cof4s30cmk4c7380b7ig-a.oregon-postgres.render.com"
+		// HOST = "dpg-cof4s30cmk4c7380b7ig-a"
+		HOST     = "dpg-cof4s30cmk4c7380b7ig-a.oregon-postgres.render.com"
 		DATABASE = "ad_proj"
 		USER     = "admin"
 		PASSWORD = "AD8Mi6fAnpPvoMsXOHeuxOWhRy5Ghrti"
@@ -28,21 +28,29 @@ func main() {
 
 	// Controller to initiallize the database
 	initFlag := flag.Bool("init", false, "Initialize the database")
+	initDBFlag := flag.Bool("table", false, "Create the table")
+	initData := flag.Bool("dataset", false, "Create 100 dataset")
 	flag.Parse()
 
 	// if add -init, initiallize db
 	if *initFlag {
-		database.DbInit(dsn)
-		database.DatasetInit(dsn)
+		if *initDBFlag {
+			database.DbInit(dsn)
+		}
+		if *initData {
+			database.DatasetInit(dsn)
+		}
 		fmt.Println("Initialization completed.")
+	} else {
+		database.ConnectDatabase(dsn)
+
+		r := gin.Default()
+		r.GET("/", router.HelloGo)
+		r.POST("/api/v1/ad", router.CreateAd)
+		r.GET("/api/v1/ad", router.ListAds)
+
+		r.Run(":8088")
+
 	}
 
-	database.ConnectDatabase(dsn)
-
-	r := gin.Default()
-	r.GET("/", router.HelloGo)
-	r.POST("/api/v1/ad", router.CreateAd)
-	r.GET("/api/v1/ad", router.ListAds)
-
-	r.Run(":8088")
 }
