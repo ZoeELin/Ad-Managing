@@ -39,6 +39,7 @@ func main() {
 	database.ConnectDatabase(dsn)
 
 	r := gin.Default()
+	r.GET("/", router.HelloGo)
 	r.POST("/api/v1/ad", router.CreateAd)
 	r.GET("/api/v1/ad", router.ListAds)
 
