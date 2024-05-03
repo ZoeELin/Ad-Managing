@@ -22,7 +22,7 @@ func ConnectDatabase(dsn string) {
 	if err != nil {
 		panic("failed to connect database")
 	}
-	fmt.Println("Successfully connected to database and created a ads table!")
+	fmt.Println("Successfully connected to database!")
 	Db = db
 }
 

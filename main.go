@@ -16,13 +16,14 @@ func main() {
 
 	const (
 		// Parameters that db connect to
-		HOST     = "dpg-cof4s30cmk4c7380b7ig-a"
+		HOST = "dpg-cof4s30cmk4c7380b7ig-a"
+		// HOST     = "dpg-cof4s30cmk4c7380b7ig-a.oregon-postgres.render.com"
 		DATABASE = "ad_proj"
 		USER     = "admin"
 		PASSWORD = "AD8Mi6fAnpPvoMsXOHeuxOWhRy5Ghrti"
 		PORT     = 5432
 	)
-	dsn := fmt.Sprintf("host=%s port=%d user=%s dbname=%s password=%s sslmode=disable",
+	dsn := fmt.Sprintf("host=%s port=%d user=%s dbname=%s password=%s sslmode=allow",
 		HOST, PORT, USER, DATABASE, PASSWORD)
 
 	// Controller to initiallize the database
