@@ -24,32 +24,14 @@ cd Ad-Managing
 # Web server deploy link
 https://ad-managing.onrender.com
 
-
 # Start the service on local
 docker-compose up
 ```
 
 ## Initialize
-Use the following flags for initialization after `-init`
+Use the following flags for initialization and generation of random data(for test) after `-init`
 - Create data table use the `-table` flag.
 - Generate and insert 100 data use the `-dataset` flag.
-
-Columns within the AdsColumn table in the database.
-```go
-type AdsColumn struct {
-	ID       uint      `gorm:"primaryKey"`
-	Title    string    `gorm:"column:title"`
-	StartAt  time.Time `gorm:"column:start_at"`
-	EndAt    time.Time `gorm:"column:end_at"`
-	AgeStart int       `gorm:"column:age_start"`
-	AgeEnd   int       `gorm:"column:age_end"`
-	Gender   string    `gorm:"column:gender"`
-	Country  string    `gorm:"column:country"`
-	Platform string    `gorm:"column:platform"`
-}
-
-```
-
 
 
 ## Structure
@@ -75,14 +57,25 @@ type AdsColumn struct {
 - Database parameters can be configured in the `const ()` block of `main.go`.
 - Any functions that interact with the database are written in `db.go`.
 - `models.go` defines various data types(`Ad`, `Conditions`, `AdsColumn`).
+- `db.go` file operate something related to the database, like insert data or select filted data.
+	- For testing convenience, 100 random data entries have been automatically generated and inserted into the database in this file.
 
-For testing convenience, upon creating the table in the database, 100 random data entries have been automatically generated and inserted into the database. The related functions are implemented in `db.go`.
-We can manually execute the program, or if database initialization and generation of 100 random data entries are required.
-```bash
-go run main.go
-go run main.go -init
+
+Columns within the AdsColumn table in the database.
+```go
+type AdsColumn struct {
+	ID       uint      `gorm:"primaryKey"`
+	Title    string    `gorm:"column:title"`
+	StartAt  time.Time `gorm:"column:start_at"`
+	EndAt    time.Time `gorm:"column:end_at"`
+	AgeStart int       `gorm:"column:age_start"`
+	AgeEnd   int       `gorm:"column:age_end"`
+	Gender   string    `gorm:"column:gender"`
+	Country  string    `gorm:"column:country"`
+	Platform string    `gorm:"column:platform"`
+}
+
 ```
-
 
 
 
