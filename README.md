@@ -6,7 +6,7 @@ This project is an advertising management system for managing advertising placem
 - [x] Place API (GET /api/v1/ad)
 - [x] Ensure that the total active advertisements in the system (i.e., StartAt < NOW < EndAt) are less than 1000.
 - [x] Limit the number of advertisements created per day to not exceed 3000.
-- [ ] Test for API that can handle over 10,000 Requests Per Secoud.
+- [ ] Test for API that can handle over 10,000 Requests Per Second.
 
 ## Quick Start
 Go to https://ad-managing.onrender.com to view the site.
@@ -56,9 +56,9 @@ Use the following flags for initialization and generation of random data(for tes
 - There are two files in the controllers directory, each containing an API function.
 - Database parameters can be configured in the `const ()` block of `main.go`.
 - Any functions that interact with the database are written in `db.go`.
-- `models.go` defines various data types(`Ad`, `Conditions`, `AdsColumn`).
-- `db.go` file operate something related to the database, like insert data or select filted data.
+	- Operation related to the database, like insert data or select filted data.
 	- For testing convenience, 100 random data entries have been automatically generated and inserted into the database in this file.
+- `models.go` defines various data types(`Ad`, `Conditions`, `AdsColumn`).
 
 
 Columns within the AdsColumn table in the database.
@@ -76,7 +76,6 @@ type AdsColumn struct {
 }
 
 ```
-
 
 
 ## Dependencies
@@ -122,6 +121,23 @@ curl -X POST -H "Content-Type: application/json" \
 ]
 }'
 ```
+```bash
+curl -X POST -H "Content-Type: application/json" \
+"https://ad-managing.onrender.com/api/v1/ad" \
+--data '{
+"title": "AD test",
+"startAt": "2023-04-01T03:00:00.000Z",
+"endAt": "2024-04-30T16:00:00.000Z",
+"conditions": [
+{
+"ageStart": 28,
+"ageEnd": 45,
+"country": ["TW", "JP", "US"],
+"platform": ["ios"]
+}
+]
+}'
+```
 
 ### List ADs 
 Send a GET request to `/api/v1/ad` with the conditions as query parameters to list active advertisements that match specitic conditions.
@@ -138,6 +154,10 @@ Example:
 ```bash
 curl -X GET -H "Content-Type: application/json" \
 "http://localhost:5000/api/v1/ad?offset=15&limit=5&age=24&gender=M&platform=ios"
+```
+```bash
+curl -X GET -H "Content-Type: application/json" \
+"https://ad-managing.onrender.com/api/v1/ad?offset=15&limit=5&age=24&gender=M&platform=ios"
 ```
 
 ## Testing
